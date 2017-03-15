@@ -475,6 +475,7 @@ footer h5{
 
 /* MEDIA FOR 991PX */
 @media screen and (max-width: 991px) {
+
     #slider-next{
         left: 358px;
     }
@@ -600,17 +601,17 @@ footer h5{
 
 
 @media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
+    .container {
+        width: 750px;
+    }
 }
 @media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
+    .container {
+        width: 970px;
+    }
 }
 @media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
+    .container {
+        width: 920px;
+    }
 }
