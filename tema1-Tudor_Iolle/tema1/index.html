@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TiC - HTML + CSS</title>
+    <link rel="icon" type="image/png" href="Resources/angularjs.png">
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="maindiv">
+
+         <div id="whitediv">
+
+            <nav id="navbar">
+                <label id="title0" ><p id="title1">CLEARCUT</p> <p id="title2">Free PSD Website Template</p></label>
+                <label class="label-menu"><a href="http://www.pentalog.ro/" target="_blank">PENTALOG</a> </label>
+                <label class="label-menu"><a href="https://www.google.com" target="_blank">GOOGLE</a> </label>
+                <label class="label-menu"><a href="http://www.w3schools.com/" target="_blank">W3SCHOOLS</a> </label>
+                <label class="label-menu"><a href="https://www.facebook.com/" target="_blank">FACEBOOK</a></label>
+                <label class="label-menu"><a href="http://wwww.gsp.ro" target="_blank">GAZETA SPORTURILOR</a></label>
+                <div id="bottomborder"></div>
+            </nav>
+
+            <p id="p1"><i>“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam <br>
+                        erat. In fringilla massa ut nisi ullamcorper pellentesque „</i></p>
+
+            <div class="slideShow">
+
+                <img class="mySlides" src="Resources/img_mountains_wide.jpg" style="width:920px; height: 350px;">
+                <img class="mySlides" src="Resources/img_fjords_wide.jpg" style="width:920px; height: 350px;">
+                <img class="mySlides" src="Resources/img_nature_wide.jpg" style="width:920px; height: 350px;">
+                <img class="mySlides" src="Resources/leaf.jpg" style="width:920px; height: 350px;">
+                <img class="mySlides" src="Resources/sunset.jpg" style="width:920px; height: 350px;">
+                <div id="button-arrwos">
+                    <button class="button-left" onclick="plusDivs(-1)"><b>&#10094;</b></button>
+                    <button class="button-right" onclick="plusDivs(1)"><b>&#10095;</b></button>
+                </div>
+
+                <div id="greenbox"><p id="green-par">This Is A Very Long Slider Title</p></div>
+                <div id="whitebox">
+                    <p id="white-par">
+                      Estibulumaccumsan egestibulum eu justo convallis<br>
+                      augue estas aenean elit intesque sed. Facilispede<br>
+                      estibulum nulla orna nisl velit.
+                     </p>
+                  </div>
+
+
+            </div>
+
+            <div id="circle-buttons">
+
+                    <button class="circle" onclick="currentDiv(1)"></button>
+                    <button class="circle" onclick="currentDiv(2)"></button>
+                    <button class="circle" onclick="currentDiv(3)"></button>
+                    <button class="circle" onclick="currentDiv(4)"></button>
+                    <button class="circle" onclick="currentDiv(5)"></button>
+
+            </div>
+
+
+
+
+                <script>
+                    var slideIndex = 1;
+                        showDivs(slideIndex);
+
+                    function plusDivs(n) {
+                        showDivs(slideIndex += n);
+                    }
+
+                    function currentDiv(n) {
+                        showDivs(slideIndex = n);
+                    }
+
+                    function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("circle");
+                        if (n > x.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = x.length}
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                    }
+                        for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" white-circle", "");
+                     }
+                         x[slideIndex-1].style.display = "block";
+                         dots[slideIndex-1].className += " white-circle";
+                    }
+                </script>
+
+           <div id="bottomborder2"></div>
+
+          <!-- <div id="presentation"> -->
+               <div id="about-us">
+                   <p class="about-us-h">A Little About Us</p>
+                   <img id="about-us-pic"src="Resources/pentalog_price.jpg" alt="Pentalog" style="width:270px; height: 140px;">
+                   <p id="about-us-par">
+                        Justoid nonummy laoreet phasellent 
+                        penatoque in antesque pellus elis eget
+                        tincidunt. Nequatdui laorem justo a non
+                        tellus laoreet tincidunt ut vel velit nonummy 
+                        laoreet phasellent penatoque in antesque
+                        pellus elis eget tincidunt.
+                        <br><br>
+                        Idenim semper pellente velis felit ac. Justoid 
+                        nonummy laoreet phasellent penatoque in 
+                        antesque pellus elis eget tincidunt. Idenim semper pellente velis....
+                        </p>
+
+                       <br>
+                       <p class="more-green">Read More About Us »</p>
+               </div>
+               <div id="services" >
+                   <p class="about-us-h">Some of Our Services</p>
+                   <div class="services">                  
+                        <img class="services-img" src="Resources/javascript.png" alt="JS" style="width:64px; height: 64px;">
+                        <p class="services-par">
+                            <b>Java Script stuff</b><br>
+                            Inteligula congue id elis donec sce sag ittis intes id laoreet aenean.</p>
+                    </div>
+
+                    <div class="services">                  
+                        <img class="services-img" src="Resources/Python.png" alt="Python" style="width:64px; height: 64px;">
+                        <p class="services-par">
+                            <b>Python stuff</b><br>
+                            Inteligula congue id elis donec sce sag ittis intes id laoreet aenean.</p>
+                    </div>
+
+                    <div class="services">                  
+                        <img class="services-img" src="Resources/php.png" alt="PHP" style="width:64px; height: 64px;">
+                        <p class="services-par">
+                            <b>PHP stuff</b><br>
+                            Inteligula congue id elis donec sce sag ittis intes id laoreet aenean.</p>
+                    </div>
+
+                    <div class="services">                  
+                        <img class="services-img" src="Resources/csharp.png" alt="Csharp" style="width:64px; height: 64px;">
+                        <p class="services-par">
+                            <b>Csharp stuff</b><br>
+                            Inteligula congue id elis donec sce sag ittis intes id laoreet aenean.</p>
+                    </div>
+
+                    <br>
+                       <p class="more-green">View All Of Our Services »</p>   
+                       
+               </div>
+               <div id="clients" >
+                   <p class="about-us-h">What Our Clients Say</p>
+                   <div class="services">                  
+                        <img class="client-img" src="Resources/quotation.png" alt="quotation" style="width:64px; height: 50px;">
+                            <p class="client-p">
+                            <b>Joh Bon Jovi</b> - C3PO</p>
+                            <p class="client-p2">Justoid nonummy laoreet phasellent penatoque in antesque pellus 
+                                elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel 
+                                velit. Idenim semper pellente velis felit ac nullam pretium morbi lacus.</p>
+                                <br>
+                            <p class="more-green2">View This Project »</p>
+                    </div>
+
+                    <div class="services">                  
+                        <img class="client-img" src="Resources/quotation.png" alt="quotation" style="width:64px; height: 50px;">
+                            <p class="client-p">
+                            <b>Tommy Tanker</b> - CEO</p>
+                            <p class="client-p2">Justoid nonummy laoreet phasellent penatoque in antesque pellus 
+                                elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel 
+                                velit. Idenim semper pellente velis felit ac nullam pretium morbi lacus.</p>
+                                <br>
+                            <p class="more-green2">View This Project »</p>
+                    </div>
+                    
+                    
+               </div>
+
+               
+       <!--    </div> -->
+
+                
+               
+           
+         </div>
+            <div id="blackdiv">
+                <div class="company">
+                    <div class="h2-company-title">
+                        <p>Company Details</p>
+                    </div>
+                    <div class="p-company">
+                        <p> Company Name<br>
+                            Street Name &amp Number<br>
+                            Town<br>
+                            Postcode/Zip</p>
+                    </div>
+                    <div class="p-company">
+                        <p> Tel: xxxxx xxxxxxxxxx<br>
+                            Fax: xxxxx xxxxxxxxxx<br>
+                            Email: <a href="mailto:contact@mydomain.com" style="color: #a7c353; text-decoration: none;">contact@mydomain.com</a></p>
+                    </div>
+                    <div class="p-company">
+                        <p> <b>Office Hours</b><br>
+                            Monday - Friday: 08:00 - 17:30<br>
+                            Saturday: 08:00 - 13:00</p>
+                    </div>
+
+                </div>
+                <div class="company">
+                    <div class="h2-company-title">
+                        <p>Stay Social</p>
+                    </div>
+                    <div class="social-media">
+                        <img class="logo-social" src="Resources/linkdin2.png" style="width: 30px; height: 30px;">
+                        <p class="social-media-p"> Get linked up in LinkedIn</p>
+                    </div>
+                    <div class="social-media">
+                        <img class="logo-social" src="Resources/twiter.png" style="width: 30px; height: 30px;">
+                        <p class="social-media-p"> Keep up with our Tweets</p>
+                    </div>
+                    <div class="social-media">
+                        <img class="logo-social" src="Resources/pinterest.png" style="width: 30px; height: 30px;">
+                        <p class="social-media-p"> Photos on Pinterest</p>
+                    </div>
+                    <div class="social-media">
+                        <img class="logo-social" src="Resources/rss.png" style="width: 30px; height: 30px;">
+                        <p class="social-media-p"> RSS Feed</p>
+                    </div>
+                    
+
+                </div>
+                <div class="company">
+                    <div class="h2-blog-title">
+                        <p>From the Blog</p>
+                    </div>
+                    <div class="p-company-blog1">
+                        <p class="blog-p"><b> Blog Post Title</b></p>
+                        
+                        <p class="blog-p" style="font-size: 11px;"> Posted by Admin on 00.00.0000</p>
+                        
+                        <p class="blog-p"> Vestibulumaccumsan egestibulum eu justo convallis augue estas 
+                            aenean elit intesque sed facilispede estibulum.</p>
+                        <p class="blog-p-green" style="color: #a7c353;">Read More »</p>
+                    </div>
+                    <div class="p-company-blog2">
+                        <p class="blog-p"><b> Blog Post Title</b></p>
+                        
+                        <p class="blog-p" style="font-size: 11px;"> Posted by Admin on 00.00.0000</p>
+                        
+                        <p class="blog-p"> Vestibulumaccumsan egestibulum eu justo convallis augue estas 
+                            aenean elit intesque sed facilispede estibulum.</p>
+                        <p class="blog-p-green" style="color: #a7c353;">Read More »</p>
+                    </div>
+                    
+
+                </div>
+                <div class="company2">
+                    <div class="h2-company-title">
+                        <p>Company Details</p>
+                    </div>
+                    <div class="p-company">
+                        <p> Company Name<br>
+                            Street Name &amp Number<br>
+                            Town<br>
+                            Postcode/Zip</p>
+                    </div>
+                    <div class="p-company">
+                        <p> Tel: xxxxx xxxxxxxxxx<br>
+                            Fax: xxxxx xxxxxxxxxx<br>
+                            Email: <span style="color: #a7c353">contact@mydomain.com<span></p>
+                    </div>
+                    <div class="p-company">
+                        <p> <b>Office Hours</b><br>
+                            Monday - Friday: 08:00 - 17:30<br>
+                            Saturday: 08:00 - 13:00</p>
+                    </div>
+
+                </div>
+                
+            </div>
+
+
+
+
+    </div>
+</body>
+</html>
