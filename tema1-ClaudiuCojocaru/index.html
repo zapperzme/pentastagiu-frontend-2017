@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PentaStagiu - Bootstrap</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css"></link>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid" id="navigationSection">
+		<nav class="navbar navbar-default" >
+			<!-- Mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapsed" aria-expanded="false">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="navbar-brand" href="#">
+					<h4 id="logoName"><span>C</span>LEARCUT</h4>
+					<p id="logoDescription" class="hidden">Free PSD Website Template</p>
+				</div>
+			</div>
+			<!-- Collapsed navigation -->
+			<div class="collapse navbar-collapse" id="menu-collapsed">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">STYLE DEMO</a></li>
+					<li><a href="#">FULL WIDTH</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">DROPDOWN</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">ITEM 1</a></li>
+							<li><a href="#">ITEM 2</a></li>
+							<li><a href="#">ITEM 3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">PORTFOLIO</a></li>
+					<li><a href="#">GALLERY</a></li>
+				</ul>
+			</div><!-- End of collapsed navigation-->
+		</nav>
+	</div><!-- End of container-fluid -->
+	
+	<!-- Text Section -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1" id="textQuote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</div>
+		</div>
+	</div> <!--End of text Section -->
+	
+	<!--Slideshow Section -->
+	<div class="container-fluid">
+		<div class="carousel slide" id="myCarousel">
+            <ol class="carousel-indicators">
+				<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+                <li data-slide-to="1" data-target="#myCarousel"></li>
+                <li data-slide-to="2" data-target="#myCarousel"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active" id="slide1">
+                    <div class="carousel-caption">
+                        <h4>This is a very long slider title</h4>
+                        <p>Lorem ipsum dolor sit amet, consequetur adispiscing alit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+                <div class="item" id="slide2">
+                    <div class="carousel-caption">
+                        <h4>This is a very long slider title</h4>
+                        <p>Lorem ipsum dolor sit amet, consequetur adispiscing alit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+                <div class="item" id="slide3">
+                    <div class="carousel-caption">
+                        <h4>This is a very long slider title</h4>
+                        <p>Lorem ipsum dolor sit amet, consequetur adispiscing alit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+			</div>
+            <!-- Controls -->
+            <a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev" id="leftIndicator"></span></a>
+            <a class="right carousel-control" data-slide="next" href="#myCarousel"><<span class="icon-next" id="rightIndicator"></span></a>
+		</div><!-- Slideshow Section-->
+    </div>
+	
+	<div class="container-fluid" id="textSection">
+		<div class="row">
+			<div class="col-md-4">
+				<h3 class="columnTitles">A Little About Us</h3>
+					<div class="row>
+						<div class="col-md-12">
+							<div id="photoAboutUs"></div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<p class="leftParagraph">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+							</p>
+							<p class="leftParagraph">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-md-offset-6">
+						<a href="#">Read More About Us  &#8811;</a>
+						</div>
+					</div>
+			</div>
+			<div class="col-md-4">
+				<h3 class="columnTitles">Some Of Our Services</h3>
+					<div class="row">
+						<div class="col-xs-3 col-md-3">
+							<div class="photoGroup"></div>
+						</div>
+						<div class="col-xs-9 col-md-9">
+							<h4 class="groupTitle">Service Title</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3 col-md-3">
+							<div class="photoGroup"></div>
+						</div>
+						<div class="col-xs-9 col-md-9">
+							<h4 class="groupTitle">Service Title</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3 col-md-3">
+							<div class="photoGroup"></div>
+						</div>
+						<div class="col-xs-9 col-md-9">
+							<h4 class="groupTitle">Service Title</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3 col-md-3">
+							<div class="photoGroup"></div>
+						</div>
+						<div class="col-xs-9 col-md-9">
+							<h4 class="groupTitle">Service Title</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-md-offset-6">
+						<a href="#">View All Of Our Services &#8811;</a>
+						</div>
+					</div>
+			</div>
+			<div class="col-md-4">
+				<h3 class="columnTitles">What Our Clients Say</h3>
+				<div class="row">
+					<div class="col-md-12">
+						<h4 class="groupTitle"><span class="bigQuotation">&ldquo;</span>Tommy Tanker - CEO</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<h4 class="groupTitle"><span class="bigQuotation">&ldquo;</span>Tommy Tanker - CEO</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+					</div>
+				</div>
+				<div class="row">
+						<div class="col-md-6 col-md-offset-6">
+						<a href="#">View This Project &#8811;</a>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" id="footerSection">
+		<div class="row">
+			<div class="col-md-3">
+				<h4 class="footerTitle">Company Details</h4>
+				<p class="companyDetailsBorder">Company Name</br>Street Name & Number</br>Town</br>Postcode/Zip</p>
+				<p>Tel: xxxxx xxxxxxxxxx</br>Fax: xxxxx xxxxxxxxxx</br>Email: <a href="#">contact@mydomain.com</a></p>
+				<p><span id="officeHours">Office Hours</span></br>Monday - Friday: 8:00 - 17:30</br>Saturday: 8:00 - 13:00</p>
+			</div>
+			<div class="col-md-3">
+				<h4 class="footerTitle">Stay Social</h4>
+				<div class="col-md-12 socialMediaSection">
+					<div class="row">
+						<div class="col-md-12 socialMediaGroup">
+							<img src="css/images/icon-linkedin.svg" class="img-responsive socialMedia" alt="LinkedIn Logo"/>
+							<a href="#">Get linked up in LinkedIn</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 socialMediaGroup">
+							<img src="css/images/icon-twitter.svg" class="img-responsive socialMedia" alt="Twitter Logo"/>
+							<a href="#">Keep up with our Tweets</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 socialMediaGroup">
+							<img src="css/images/icon-pinterest.svg" class="img-responsive socialMedia" alt="Pinterest Logo"/>
+							<a href="#">Photos on Pinterest</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 socialMediaGroup">
+							<img src="css/images/icon-rss.svg" class="img-responsive socialMedia" alt="Rss Logo"/>
+							<a href="#">RSS Feed</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<h4 class="footerTitle">From The Blog</h4>
+				<div class="row">
+					<div class="col-md-12 companyDetailsBorder">
+						<h5>Blog Post Title</h5>
+						<span>Posted by Admin on 00.00.0000</span>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+				<div class="row">
+						<div class="col-md-6 col-md-offset-6">
+						<a href="#">Read More &#8811;</a>
+						</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<h5>Blog Post Title</h5>
+						<span>Posted by Admin on 00.00.0000</span>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+				<div class="row">
+						<div class="col-md-6 col-md-offset-6">
+						<a href="#">Read More &#8811;</a>
+						</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<h4 class="footerTitle">Contact Us</h4>
+				<form class="companyDetailsBorder">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Name">
+					</div>
+					<div class="form-group">
+						<input type="email" class="form-control" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<textarea class="form-control" rows="6" placeholder="Message"></textarea>
+					</div>
+					<button type="submit" class="btn btn-success">SUBMIT</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<footer class="footer hidden-xs">
+		<div class="container-fluid">
+			<div class="col-md-6">
+                <p>Copyright &copy; 2013 Domain Name - All Rights Reserved</p>
+            </div>
+            <div class="col-md-6 text-right">
+                <p>Template by <a href="#">OS Templates</a></p>
+            </div>
+		</div>
+	</footer>
+</body>
+</html>
