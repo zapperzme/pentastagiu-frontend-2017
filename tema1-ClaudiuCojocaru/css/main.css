@@ -1,0 +1,191 @@
+body {
+	font-family: Georgia;
+	background-color: #313131;
+}
+div.container-fluid {
+	margin: 0 1% 0 1%;
+	background-color:#ffffff;
+}
+#navigationSection {
+	border-top: 5px solid #a7c353;
+}
+body .container-fluid > nav.navbar {
+	border-radius:0px;
+	border:none;
+}
+#logoName {
+	font-size:1.7em;
+	padding-left:2%;
+}
+#logoDescription {
+	font-size:0.8em;
+	line-height:0px;
+}
+div.navbar-header{
+	background-color:#ffffff;
+}
+#menu-collapsed {
+	background-color:#ffffff;
+	padding-top: 3em;
+}
+#menu-collapsed ul.navbar-right li > a {
+	font-size:1.1em;
+}
+#menu-collapsed ul.navbar-right > li:hover {
+	background-color:#a7c353;
+}
+ul.dropdown-menu li a:hover {
+	background-color:#a7c353;
+}
+#textQuote {
+	font-size: 1.5em;
+	font-style:italic;
+	text-align: center;
+	border-top: 1px solid #a7c353;
+	padding:1.5em 0 1.5em 0;
+}
+#textQuote::before{
+	content: open-quote;
+}
+#textQuote::after {
+	content: close-quote;
+}#myCarousel {
+   margin-top:60px;
+}
+
+.carousel-caption {
+	width:60%;
+	padding-left:30%;
+}
+
+.carousel-caption h4 {
+   font-size:2em;
+   color:white;
+   background-color: #a7c353;
+}
+.carousel-caption p{
+	background-color:#ffffff;
+	color:gray;
+}
+
+#myCarousel .item {
+   height:400px;
+}
+
+#slide1 {
+   background: url('images/carousel_medium_01.jpg') top center no-repeat;
+}
+
+#slide2 {
+   background: url('images/carousel_medium_02.jpg') top center no-repeat;
+}
+
+#slide3 {
+   background: url('images/carousel_medium_03.jpg') top center no-repeat;
+}
+#leftIndicator{
+	display:block;
+	width:50px;
+	height:50px;
+	border:3px solid #a7c353;
+	border-radius:50px;
+	color:#a7c353;
+	background-color:black;
+	font-size:2em;
+}
+#rightIndicator {
+	display:block;
+	width:50px;
+	height:50px;
+	border:3px solid #a7c353;
+	border-radius:50px;
+	color:#a7c353;
+	background-color:black;
+	font-size:2em;
+}
+#textSection {
+	color: gray;
+	font-size: 1.2em;
+	line-height: 1.1em;
+}
+#photoAboutUs {
+	border:1px double black;
+	width:270px;
+	height:140px;
+	background-color:black;
+}
+p.leftParagraph {
+	padding-top:5%;
+}
+div.photoGroup {
+	width:64px;
+	height:64px;
+	background-color:black;
+}
+h4.groupTitle {
+	font-size:1.2em;
+}
+span.bigQuotation {
+	font-size:5em;
+}
+#footerSection {
+	background-color: #313131;
+	color: gray;
+	padding-top:3%;
+	padding-bottom:3%;
+	line-height:1.75em;
+	border-bottom:1px solid gray;
+}
+h4.footerTitle {
+	color:white;
+	padding:1.25em 0 1.2em 0;
+}
+div.footerColumns {
+	padding-top:1.2em;
+}
+.companyDetailsBorder{
+	border-top:1px solid gray;
+	padding-top:1.1em;
+}
+img.socialMedia{
+	width:10%;
+	height:10%;
+	display:inline;
+}
+div.socialMediaGroup {
+	padding:5% 0 5% 0;
+	border-top:1px solid gray;
+	vertical-align:middle;
+}
+div.socialMediaGroup a {
+	padding-left:5%;
+}
+div.socialMediaSection:last-child{
+	border-bottom: 1px solid gray;
+}
+.form-control {
+	background-color:#383838;
+	color:gray;
+	border:none;
+}
+button[type="submit"]{
+	color:black;
+	background-color:#a7c353;
+}
+#textSection a {
+	color:#a7c353;
+	font-size:0.9em;
+}
+#footerSection a {
+	color:#a7c353;
+}
+footer.footer {
+	padding-top:1.1em;
+}
+footer.footer > div.container-fluid {
+	background-color:#313131;
+	color:gray;
+}
+footer.footer > div.container-fluid a {
+	color:gray;
+}
