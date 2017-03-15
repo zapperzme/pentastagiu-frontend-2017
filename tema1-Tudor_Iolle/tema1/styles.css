@@ -7,7 +7,7 @@
     position: relative;
     margin: auto;
     width: auto;
-    height: 3000px;
+    height: auto;
     
     padding-bottom: 15px;
     font-family: Georgia, serif;
@@ -334,7 +334,7 @@
     width: 960px;
     height: 250px;
     margin-top: 40px;
-    border: solid 1px red;
+    
 }
 
 
@@ -414,6 +414,54 @@
     padding-top: 7px;
     padding-left: 20px;
     color: #a7c353;
+}
+
+.contact-form {
+margin-top: 20px;
+}
+
+input{
+  width:210px;
+  height: 20px;
+  color: #666666;
+  font-size: 11px;
+  margin-bottom: 10px;
+  background-color: #383838;
+  border: 2px solid #383838;
+  border-radius: 5px;
+}
+
+.input-message{
+  height: 85px;
+}
+.submit-message{
+  width: 80px;
+  background-color: #a7c353;
+  border-color: #a7c353;
+}
+
+#copyright{
+    display: absolute;
+    margin: auto;
+    margin-top: 40px;
+    width: 960px;
+    height: 60px;
+    color: #666666;
+    font-size: 12px;
+    border-top: solid 1px #666666;
+    border-bottom: solid 1px #666666;
+}
+
+#copyright-text{
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+#template{
+    float: right;
+    padding-top: 20px;
+    padding-right: 20px;
 }
 
 
