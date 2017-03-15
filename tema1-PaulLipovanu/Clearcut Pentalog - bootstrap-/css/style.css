@@ -1,0 +1,399 @@
+
+*{
+    font-family: 'Lora', serif;
+}
+
+
+body{
+    background-color: #313131;
+}
+a:focus, a:hover {
+    color: #637237;
+    text-decoration: none;
+}
+
+.w{
+    background-color: #fff;
+}
+
+/** NAVBAR START **/
+.navbar-brand>img {
+    margin-top: 14px;
+    position: relative;
+    z-index: 3;
+}
+.container-fluid .navbar-header{
+    height: 80px;
+
+}
+
+
+
+.container-fluid>.navbar-collapse{
+    position: relative;
+    bottom: 1px;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.bgreen{
+    border-top: 5px solid #a7c353;
+}
+
+
+
+.topgreen{
+    border-radius: 0;
+    border-bottom: 0;
+    height: 100px;
+    margin-bottom: 50px;
+}
+.botgreen{
+    border-bottom: 2px solid #a7c353;
+
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #a7c353;
+}
+
+
+
+.navbar-toggle{
+    background-color: #a7c353;
+}
+.icon-bar{
+    background-color: #fff;
+}
+
+.act{
+    background-color: #a7c353;
+}
+
+.navbar{
+    border-bottom: 0;
+    background-color: #fff;
+}
+
+.buttons > li > a{
+    padding: 53px 22px 34px;
+    color: #637237;
+
+
+}
+
+/* WRITE SECTION STARTS ***********************/
+.write h1{
+    font-style: italic;
+    color: #959595;
+    font-size: 22px;
+    width: 71%;
+    margin: 0 auto;
+}
+
+.write{
+    background-color: #fff;
+}
+
+
+/* CAROUSEL START*****************************/
+.carousels{
+    width: 920px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+
+}
+
+#myCarousel{
+    margin-top: 60px;
+    height: 350px;
+    margin-right: 0;
+    background-color: #fff;
+}
+
+.carousel-caption{
+    width: 350px;
+    right: 1%;
+    left: 54%;
+    bottom: 31px;
+    padding-bottom: 30px;
+    text-shadow: none;
+}
+
+.carousel-caption h4{
+    font-size: 22px;
+    color: #fff;
+    background-color: #a7c353;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.carousel-caption p{
+    font-size: 13px;
+    color: #999999;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#myCarousel .item{
+    height:  400px;
+}
+
+.left img{
+    position: absolute;
+    top: 140px;
+    left: 120px;
+}
+
+.right img{
+    position: absolute;
+    top: 140px;
+    right: 120px;
+}
+
+.carousel-indicators{
+    top: 367px;
+
+}
+
+.carousel-indicators .active{
+    width: 16px;
+    height: 16px;
+}
+
+.carousel-indicators li {
+    border: 2px solid #a7c353;
+    background-color: #a7c353;
+    width: 14px;
+    height: 14px;
+}
+
+
+#slide1{
+    background: url("../images/slider.png") top center no-repeat;
+}
+#slide2{
+    background: url("../images/slider.png") top center no-repeat;
+}
+#slide3{
+    background: url("../images/slider.png") top center no-repeat;
+}
+#slide4{
+    background: url("../images/slider.png") top center no-repeat;
+}
+#slide5{
+    background: url("../images/slider.png") top center no-repeat;
+}
+
+/***** CAROUSEL ENDS ************/
+
+
+
+
+/**** SECTION  ABOUTUS START ****/
+
+.row{
+    margin-bottom: 20px;
+}
+
+.aboutus{
+    border-top: 1px solid #e2e2e2;
+    color: #666666;
+    margin-top: 70px;
+
+}
+
+.aboutus h2{
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+.pad{
+    border: 2px solid #e2e2e2;
+    padding: 4px;
+    margin-bottom: 33px;
+}
+.pull{
+    margin-top: 23px;
+}
+.aboutus p{
+    width: 85%;
+}
+.media-body p{
+    width: 71%;
+    font-size: 13px;
+}
+
+.rtext{
+    margin-top:5px;
+}
+
+.gtext{
+    color: #a7c353;
+    margin-right: 60px;
+    margin-top: 10px;
+}
+
+/**** FOOTER ****/
+footer{
+    margin-top: 40px;
+}
+footer h4{
+    color: #ffffff;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #3a3a3a;
+    padding-bottom: 20px;
+
+}
+
+footer p{
+    color: #999999;
+}
+footer h5{
+    color: #999999;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.fa-linkedin ,.fa-pinterest, .fa-rss, .fa-twitter{
+    color: #fff;
+    padding: 8px;
+    border: 1px solid #383838;
+    background-color: #383838;
+    border-radius: 25px;
+    margin-right: 5px;
+}
+
+.block{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #3a3a3a;
+    padding-bottom: 20px;
+}
+
+
+.social {
+    color: #a7c353;
+}
+
+
+
+.blog{
+    margin-bottom: 55px;
+}
+.form-control{
+    background-color: #383838;
+    border: none;
+    color: #989898;
+}
+
+.btn-default{
+    background: #a7c353;
+    color: #313131;
+    border: none;
+    text-shadow: none;
+}
+.btn-default:hover{
+    background: #637237;
+}
+
+.footer-bottom{
+    padding-top: 20px;
+    border-top: 2px solid #3a3a3a;
+}
+/* END OF FOOTER */
+
+
+
+/*************MEDIA Q **************
+************************************/
+
+/* MEDIA FOR 1198PX */
+@media screen and (max-width: 1198px){
+    .right img{
+        right: 25px;
+    }
+    .left img{
+        left: 25px;
+    }
+}
+
+/* MEDIA FOR 991PX */
+@media screen and (max-width: 991px) {
+    .buttons > li > a {
+        padding: 6px;
+    }
+
+    #myCarousel {
+        width: 729px;
+    }
+
+    .carousel-caption {
+        left: 48%;
+    }
+    .right img{
+        right: 10px;
+    }
+    .left img{
+        left: 10px;
+    }
+
+
+}
+
+/* MEDIA FOR 767PX */
+@media screen and (max-width: 767px) {
+    .buttons > li > a {
+        padding: 5px;
+    }
+
+    #myCarousel {
+        width: 553px;
+        margin: 0 auto;
+    }
+
+    .carousel-caption {
+        left: 40%;
+    }
+
+    .carousel-caption {
+        width: 310px;
+    }
+
+    .btn-default {
+        width: 100%;
+    }
+
+    footer h4, footer p, .block, .row h2, .blog h5 {
+        text-align: center;
+    }
+    footer h4{
+        color: #a7c353;
+    }
+}
+
+
+/* MEDIA 585PX */
+@media screen and (max-width: 585px){
+
+    #myCarousel {
+        width: 553px;
+        margin: 0 auto;
+        display: none;
+    }
+
+    .aboutus p {
+        text-align: center;
+        width: 100%;
+    }
+    .pad{
+        margin: 27px auto;
+    }
+
+    .media-body p{
+        width: 71%;
+    }
+
+}
+
+/* THE END :) Lipovanu Paul */
