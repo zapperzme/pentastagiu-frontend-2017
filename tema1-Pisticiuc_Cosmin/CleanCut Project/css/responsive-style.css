@@ -1,0 +1,265 @@
+body{
+    font-family: Georgia;
+    color: #979797;    
+    background-color: #313131;
+}
+
+.wrapper{
+    border-top: 5px solid #a7c353;
+    margin: 0 20px;
+    background-color: #fff;
+}
+
+.big-text{
+    
+    font-size: 35px;
+}
+.small-text{
+    font-size: 12px;
+}
+
+.slider{
+    width: 920px;
+    height: 350px;
+    position: relative;
+    margin: 0 20px;
+    background-color: #353535;
+    
+}
+.slider .place-holder{
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 42%;
+    font-size: 32px;
+    color: #fff;
+}
+.slider .slider-title{
+    
+    position: absolute;
+    top: 53%;
+    left: 48%;
+    width: 370px;
+    font-size: 22px;
+    text-align: center;
+    padding: 10px 0px;
+    background-color: #a7c353;
+    color: #fff;
+}
+
+.slider .slider-description{
+    width: 350px;
+    position: absolute;
+    top: 70%;
+    left: 48%;
+    font-size: 15px;
+    text-align: ;
+    padding: 10px;
+    background-color: #fff;
+}
+
+#arrow-left{
+    position: absolute;
+    top: 40%;
+    left: 2%;
+    vertical-align: middle;
+    
+}
+#arrow-right{
+    position: absolute;
+    top: 40%;
+    right: 2%;
+}
+
+.dots{
+    margin: 0 20px;
+    padding: 30px 0 45px 0;
+    text-align: center;
+}
+/*
+.my-nav{
+    margin-right: 20px;
+}
+*/
+.my-head{
+    border-top: 5px solid #a7c353;
+    
+}
+
+.navbar {
+    position: relative;
+    min-height: 80px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 0;
+    background-color: #fff;
+}
+
+.navbar-default li a{
+    padding: 35px 10px;
+}
+
+.navbar-default > li:hover{
+    background-color: #a7c343;
+    color: #fff;
+}
+
+#active{
+    background-color: #a7c353;
+    color: #fff;
+}
+
+.shout{
+    text-align: center;
+    padding: 20px 60px;
+}
+
+/*
+.about-us, .services, .testimonials{
+    margin: 35px 30px 0 0;
+}
+*/
+
+.content{
+    margin: 0 20px;
+    background-color: #fff;
+}
+.content .hr-content{
+    margin: 0 0 5px 0;
+    
+}
+.content .a-title{
+    text-align: left;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+
+.a-desc {
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.6em;
+    margin-top: 25px;
+}
+
+.content a{
+    font-size: 15px;
+    float: right;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #a7c353;
+}
+.serv-a{
+    margin-bottom: 20px;
+}
+.serv-a .service-img{
+    display: inline;
+    float: left;
+}
+.serv-a .service-title, .service-text{
+    margin: 0 0 0 80px;
+    padding-bottom: 8px;   
+}
+
+.services .view-serv{
+    margin: -15px;
+}
+.testim{
+    margin-bottom: 200px;
+}
+
+.testim .testim-img{
+    display: inline;
+    float: left;
+}
+
+.testim-title{
+    padding-top: 10px;
+    text-align:center;
+}
+
+.testim-body{
+    float: left;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+.testim a{
+    float: right;
+    clear: both;
+}
+
+
+footer{
+    margin:30px 20px;
+}
+
+
+/*
+footer .company-details, .social-media, .blog, .contact{
+    width: 23%;
+    float: left;
+    margin-right: 19px;
+}
+*/
+footer h3{
+    text-align: left;
+    margin: 20px 0;
+}
+
+footer a{
+    color: #a7c353;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.option-cls{
+    background-color: #383838;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 10px;
+    padding: 25px 20px;
+}
+
+.company-details div{
+    margin-bottom: 20px;
+}
+
+.social-media div{
+    display: inline;
+    float: left;
+    margin: 13px 0;
+}
+
+.blog div{
+    display: inline;
+    float: left;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.blog div a{
+    float: right;
+}
+
+.copyright{
+    background-color: #313131;
+}
+
+.copyright p{
+    display: inline;
+    float: left;
+    padding: 0 20px;
+}
+.copyright .a{
+    float: left;
+}
+.copyright .b{
+    float: right;
+}
+
+footer hr{
+    margin:0 0 20px 0; 
+    border:1px solid #383838; 
+    clear:both;
+}
