@@ -1,0 +1,40 @@
+ul.topnav {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #ffffff;
+}
+ul.topnav li {
+float: left;
+}
+.topnav {
+position: relative;
+width: 100%;
+}
+ul.topnav li a {
+display: block;
+color: #313131;
+padding: 45px 15px;
+text-decoration: none;
+box-sizing: border-box;
+height: 96px;
+}
+ul.topnav li a:hover:not(.left) {
+background-color: #a7c353;
+}
+ul.topnav li a.active {
+background-color: #a7c353;
+}
+ul.topnav li.right {
+float: right;
+}
+a.left span:first-child {
+font-size : 26px;
+}
+a.left span:nth-child(3) {
+font-size : 12px;
+}
+a.left:first-letter {
+font-size : 32px;
+}

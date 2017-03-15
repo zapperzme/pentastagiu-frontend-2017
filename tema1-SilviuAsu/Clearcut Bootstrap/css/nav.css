@@ -1,0 +1,44 @@
+
+.navbar-custom {
+margin-left : 20px;
+margin-right : 20px;
+font-size : 13px;
+}
+.bg_white {
+background-color : #ffffff;
+}
+.navbar-default {
+border : 0;
+}
+.navbar-header {
+background-color : #ffffff;
+}
+.navbar-header .big {
+font-size : 26px;
+margin-bottom : 0;
+}
+.navbar-header .small {
+font-size : 12px;
+}
+.navbar-header .big:first-letter {
+font-size : 32px;
+}
+.navbar.navbar-custom .navbar-nav > .active > a, .navbar.navbar-custom .navbar-nav > .active > a:focus {
+background : #a7c353;
+}
+.navbar-default .navbar-nav > li > a {
+background-color : #ffffff;
+}
+.navbar-nav a.page-scroll {
+padding-top : 50px;
+padding-bottom : 26px;
+}
+.navbar.navbar-custom .navbar-nav > li > a:hover {
+background-color : #a7c353;
+}
+.navbar-custom .navbar-toggle:focus, .navbar-custom .navbar-toggle:hover {
+background-color : #a7c353;
+}
+.page-scroll {
+font-size : 13px;
+}
