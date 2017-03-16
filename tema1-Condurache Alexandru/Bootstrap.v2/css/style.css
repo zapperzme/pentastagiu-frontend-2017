@@ -74,19 +74,6 @@ body {
 	position: relative;
 	margin-bottom: 5%;
 }
-.carousel-indicators {
-	bottom:-50px;
-}
-.carousel-inner {
-	
-}
-.carousel-indicators li {
-	background-color: #a7c353;
-	border-color: #a7c353;
-}
-.carousel-indicators .active {
-	background-color: #fff;
-}
 .carousel-control.left,
 .carousel-control.right {
 	opacity: 1;
@@ -99,7 +86,7 @@ body {
 	position: absolute;
 	z-index: 5;
 	display: inline-block;
-	top: 18%;
+	top: 45%;
 }
 .carousel-control.left span {
   left: 50%;
@@ -132,8 +119,14 @@ body {
 #textslide {
 	position: absolute;
 	right: 5%;
-	top: 25%;
+	top: 55%;
 	max-width: 35%;
+	
+}
+@media screen and (max-width: 1024px) {
+	#textslide {
+		z-index: -1;
+	}
 }
 #box1 {
 	background-color: #a7c353;
@@ -219,9 +212,6 @@ footer {
 }
 .foot {
 	margin-bottom: 3%;
-}
-.col-md-3 form {
-	
 }
 .form-group input,
 .form-group textarea {
