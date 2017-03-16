@@ -211,7 +211,10 @@ textarea:focus {
 .grid-fix {
     height: 322px;
 }
-@media(min-width: 320px) {} @media(min-width: 500px) {
+
+/* responsive design */
+
+@media(min-width: 500px) {
     .img-about-us {
         display: inline;
         float: left;
@@ -219,9 +222,6 @@ textarea:focus {
         margin-bottom: 0px;
     }
 }
-
-/* responsive design */
-
 
 /* == phones == */
 @media(max-width: 767px) {
@@ -246,7 +246,6 @@ textarea:focus {
         float: none;
     }
     .left-indicator {
-        ;
         display: none;
     }
     .right-indicator {
@@ -292,7 +291,6 @@ textarea:focus {
     .carousel-caption h3 {
         font-size: 14px;
         background-color: #a7c353;
-        ;
         margin-top: 104px;
         color: #fff;
     }
