@@ -1,0 +1,69 @@
+@media screen and (max-width: 600px){
+ul.topnav li.right,
+ul.topnav li {
+float: none;
+}
+ul.topnav li a {
+padding: 25px 5px;
+height: 56px;
+}
+#largebox {
+height: 100%;
+}
+#largebox1 {
+height: 100%;
+}
+#box1 {
+float: none;
+width: 100%;
+}
+#box2 {
+float: none;
+width: 100%;
+}
+#box3 {
+float: none;
+width: 100%;
+}
+#box4 {
+float: none;
+width: 100%;
+}
+#box5 {
+float: none;
+width: 100%;
+}
+#box6 {
+float: none;
+width: 100%;
+}
+#box7 {
+float: none;
+width: 100%;
+}
+.description-text{
+font-size: 12px;
+right: 5%;
+width: 90% !important;
+}
+.slider {
+height: 250px !important;
+}
+.sliderinner>ul>li {
+height: 250px !important;
+}
+
+.sliderinner>ul>li>img {
+height: 250px !important;
+}
+footer {
+position: relative;
+bottom: 0;
+width: 100%;
+
+}
+footer p {
+font-size: 10px;
+
+}
+}
