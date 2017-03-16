@@ -25,16 +25,20 @@ h2{
 h3{
 	font-size: 16px;
 	font-weight: normal;
+        padding: 3px 0;
 }
 h4{
 	font-size: 14px;
+        padding-bottom: 10px;
 }
 h5{
 	font-size: 12px;
 	font-weight: bold;
+        padding: 3px 0;
 }
 p{
 	font-size: 13px;
+        line-height: 1.5;
 }
 blockquote{
 	font-size: 22px;
@@ -55,6 +59,7 @@ footer p{
 }
 p span{
 	font-size: 11px;
+        padding: 8px 0;
 }
 input{
 	font-size: 13px;
@@ -164,11 +169,11 @@ blockquote{
 .slideimg .leftdiv>img,.slideimg .rightdiv>img{
 	border-radius: 50%;
 	background-color: #000;
-	padding: 2px;
+	padding: 5px;
 }
 .slideimg .leftdiv>img:hover,.slideimg .rightdiv>img:hover{
 	background-color: #666;
-	padding: 5px;
+	padding: 8px;
 }
 .leftdiv{
 	position: absolute;
@@ -231,7 +236,7 @@ blockquote{
 .infochild h2{
 	margin: 0 auto 35px 0;
 }
-.infochild>img{
+img#img140{
 	width:100%; 
 	height:140px;
 	float:left;
@@ -249,9 +254,11 @@ blockquote{
 .infochild.infochildcenter>p{
     text-align: right;
 }
-.infochild>img{
+.infochild:last-child>img{
 	border:none;
 	margin: 0;
+        margin-right: 5px;
+        float: left;
 }
 .infochild:nth-child(1) p{
 	margin: 20px 0;
@@ -301,9 +308,6 @@ footer p{
 	margin-right: 20px;
 	font-size: 12px;
 }
-footer div:first-child p{
-	padding-top: 25px;
-}
 
 .lastdiv{
 	width: 95%;
@@ -312,8 +316,11 @@ footer div:first-child p{
 .hrline, footer ul li{
 	border-top: 2px solid #383838;
 	margin-right: 20px;
-	padding: 10px 0;
-
+	padding: 10px 0;      
+}
+p.hrline,form.hrline,.wrapdiv>div>h3.hrline,
+footer ul li:first-child{
+    padding-top: 20px;
 }
 p .green, footer ul li a{
 	color: #a7c353;
