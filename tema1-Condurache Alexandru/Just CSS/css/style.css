@@ -1,0 +1,283 @@
+html {
+	margin: 0;
+	width: 100%;
+	background-color: #313131;
+	font-family: Georgia;
+}
+body {
+	margin: auto;
+	width: 960px;
+	background-color: white;
+	border-top: 5px solid #a7c353;
+}
+.container {
+	margin: auto;
+	width: 920px;
+	padding-bottom: 50px;
+}
+/*NAVBAR*/
+nav {
+	width: 100%;
+	height: 95px;
+	border-bottom: #a7c353 solid 1px;
+}
+#logo {
+	text-transform: capitalize;
+	color: #999999;
+	float: left;
+	line-height: 150%;
+	padding-top: 10px;
+}
+#logo span {
+	text-transform: uppercase;
+}
+#logo p::first-line {
+	font-variant: small-caps;
+	color: #666666;
+	font-size: 250%;
+}
+#bara_meniu {
+	float: right;
+}
+#bara_meniu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+#bara_meniu li {
+    float: left;
+}
+#bara_meniu li a{
+    display: inline-block;
+    color: #979797;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	padding-top: 50px;
+	padding-bottom: 26px;
+}
+#bara_meniu li a:hover, .dropdown:hover .dropbtn {
+    background-color: #a7c353;
+	color: white !important;
+}
+#bara_meniu li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 500;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+#bara_meniu .active {
+	background-color: #a7c353;
+	color:white;
+}
+/*HEADER*/
+header {
+	margin:auto;
+	color: #666666;
+	text-align: center;
+	padding: 1em 3em 1em 3em;
+	font-size: 1.45em;
+	font-weight: none;
+}
+q {
+	quotes: "\201C" "\201E";
+}
+/*SLIDESHOW*/
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+#textslide {
+	position: absolute;
+	right: 50px;
+	bottom:20px;
+	max-width: 390px;
+}
+#box1 {
+	background-color: #a7c353;
+	color: white;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#box2 {
+	color: #999999;
+	background-color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.prev, .next {
+	position: absolute;
+	top: 40%;
+	width: auto;
+	padding: 16px;
+}
+.textslide {
+	position: absolute;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+.next {
+	right: 0;
+}
+.dot {
+	cursor:pointer;
+	height: 10px;
+	width: 10px;
+	margin: 0 2px;
+	background-color: #a7c353;
+	border-radius: 50%;
+	display: inline-block;
+	border: #a7c353 solid 2px;
+	border-radius: 60px;
+}
+#buline .active,
+.dot:hover {
+	background-color: white !important;
+}
+/*ARTICLE*/
+#articol {
+	color: #999999;
+}
+#articol a {
+	float: right;
+	color: #a7c353;
+	text-decoration: none;
+}
+#c1, #c2, #c3{
+    width: 32%;
+	display: inline-block;
+}
+#c1 {
+	float:left;
+	margin: auto;
+}
+#c2 {
+	margin: auto;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+#c3 {
+	float: right;
+}
+#c1 img {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
+}
+.photo{
+	float:left;
+	width: 30%;
+	display: inline-block;
+}
+.textphoto {
+	float: left;
+	width: 70%;
+}
+.st {
+	font-weight: bold;
+	margin-top: 0;
+}
+.tt img {
+	vertical-align: middle;
+}
+.tt span {
+	padding-top: 2px;
+}
+/*FOOTER*/
+footer { 
+	background-color: #313131;
+	color: #999999;
+	padding-top: 30px;
+}
+footer a {
+	color: #a7c353;
+	text-decoration: none;
+}
+#fc1, #fc2, #fc3, #fc4 {
+	width: 24.25%;
+	display: inline-block;
+}
+#fc1 {
+	float: left;
+}
+#fc2 {
+	float: left;
+	padding-left: 1%;
+	padding-right: 0.5%;
+}
+#fc3 {
+	float: left;
+	padding-left: 0.5%;
+	padding-right: 1%;
+	margin: auto;
+}
+#fc4 {
+	float:right;
+}
+.ft {
+	color: white;
+	font-weight: bold;
+	border-bottom: #3a3a3a solid 1px;
+	padding-bottom:10px;
+	font-size: 120%;
+}
+.el{
+	border-bottom: #3a3a3a solid 1px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+#fc3 a{
+	float: right;
+}
+.textinp {
+	border-top: none;
+	border-left: none;
+}
+.textinp,
+textarea {
+	background-color: #383838 !important;
+	color: #989898;
+	border-color: #383838;
+	margin-bottom: 10px;
+	width: 100%;
+	border-radius: 4px;
+	font-family: Georgia;
+	padding: 15px;
+	font-size: 16px;
+}
+textarea {
+	resize: none;
+}
+#sub {
+	padding: 10px;
+	background-color: #a7c353;
+	border-radius: 4px;
+	border-color: black;
+	font-weight: bold;
+	border-width: 1px;
+	font-family: Georgia;
+}
+.footerr {
+	border-top: #3a3a3a solid 1px;
+	width: 100%;
+	display: inline-block;
+	margin-top: 30px;
+	padding-top: 20px;
+}
+#left {
+	float: left;
+}
+#right {
+	float: right:
+}
