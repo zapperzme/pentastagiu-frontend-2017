@@ -1,0 +1,581 @@
+body {
+    margin: 0;
+}
+.container {
+    font-family: Georgia;
+    width: 59%;
+    margin: auto;
+}
+.maindiv {
+    background-color: #313131;
+    height: 1605px;
+    width: 1000px;
+    margin-top: 0;
+    position: absolute;
+}
+
+.seconddiv {
+    background-color: white;
+    height: 1145px;
+    width: 962px;
+    margin-left: 19px;
+    position: absolute;
+}
+
+.thirddiv {
+    background-color: #353535;
+    height: 350px;
+    width: 920px;
+    margin-left: 40px;
+    margin-top: 245px;
+    position: relative;
+    
+}
+
+.firstparagraph {
+    color: #666666;
+    font-size: 20px;
+    font-style: italic;
+    position: absolute;
+    margin-top: 50px;
+    padding-left: 200px;
+      }
+.firstparagraphtwo {
+  text-align: center;
+  margin-top: 75px;
+  position: absolute;
+  padding-left: 265px;
+  font-style: italic;
+  font-size: 20px;
+  color: #666666;
+}
+
+#menu {
+    list-style-type: none;
+    float: right;
+    margin-top: 58px;
+   
+}
+
+#menu1 {
+    float: right;
+}
+
+#menu1 a {
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    height: 45px;
+}
+
+#menu1 a:hover {
+    background-color: #a7c353;
+    color: #eee;
+    height: 102px;
+    width: 90px;
+    margin-top: 0px;
+    padding-top: 59px;
+    padding-bottom: 35px;
+}
+
+/* Slider css*/
+
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+.mySlides {display:none}
+
+/* container */
+.slideshow-container {
+  height: 350px;
+  width: 920px;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/*.active, .dot:hover {
+  background-color: #999999;
+}*/
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.firsttable {
+    margin-top: 570px;
+    height: 480px;
+    width: 298px;
+    display: inline-table;
+    margin-left: 13px;
+}
+
+table, td, th {
+  border: collapse;
+}
+
+.texttablefirst {
+    font-size: 20px;
+    font-weight: normal;
+    
+}
+
+.aboutustext {
+  margin-left: 4px;
+  text-align: left;
+  font-weight: lighter;
+  font-size: 22px;
+  color: #666666;
+}
+
+#imageabout {
+  display: block;
+  height: 140px;
+  width: 272px;
+  border: 2px solid #e2e2e2;
+  padding: 4px;
+}
+
+.aboutustextdoi {
+  text-align: left;
+  margin-left: 4px;
+  font-size: 14px;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-right: 20px;
+  color: #666666;
+}
+ 
+.aboutustexttrei {
+  margin-left: 4px;
+  font-size: 14px;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-right: 20px;
+  color: #666666;
+}
+
+.aboutuslink {
+  text-decoration: none;
+  color: #a7c353;
+  font-size: 14px;
+  position: absolute;
+  margin-left: 130px;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-right: 20px;
+}
+
+.sometext {
+  margin-left: 85px;
+  margin-top: -4px;
+  font-weight: bold;
+  color: #666666;
+}
+
+.sometextunu{
+  margin-left: 85px;
+  margin-top: -4px;
+  font-size: 14px;
+  color: #666666;
+}
+
+
+.sasepatruunu {
+  margin-top: 12px;
+}
+
+.sometextdoi {
+  margin-left: 85px;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #666666;
+}
+
+.sasepatrudoi {
+  margin-top: 12px;
+}
+
+.sometexttrei {
+  margin-left: 85px;
+  margin-top: 12px;
+  font-weight: bold;
+  color: #666666;
+}
+
+.sasepatrutrei {
+  margin-top: 12px;
+}
+
+.sometextpatru {
+  margin-left: 85px;
+  margin-top: 12px;
+  font-weight: bold;
+  color: #666666;
+}
+
+.aboutuslinktwo {
+  text-decoration: none;
+  color: #a7c353;
+  font-size: 14px;
+  position: absolute;
+  margin-left: 78px;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-right: -25px;
+  margin-top: 12px;
+}
+
+.sometexttommy {
+  margin-left: 70px;
+  font-weight: bold;
+  color: #666666;
+}
+
+.ceo {
+  text-align: right;
+  margin-top: -36px;
+  margin-right: 35px;
+  color: #666666;
+}
+
+.texttestimony {
+  font-size: 14px;
+  margin-top: -3px
+}
+
+.ghilimeledoi {
+  margin-top: 24px;
+}
+
+.texttestimonytwo {
+  font-size: 14px;
+  color: #666666;
+}
+
+.aboutuslinktthree {
+  text-decoration: none;
+  color: #a7c353;
+  font-size: 14px;
+  position: absolute;
+  margin-left: 153px;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-right: 20px;
+}
+
+.ceotwo {
+  text-align: right;
+  margin-top: -36px;
+  margin-right: 35px;
+  color: #666666;
+}
+
+.sometexttommytwo {
+  margin-left: 70px;
+  font-weight: bold;
+  margin-top: 38px;
+  color: #666666;
+}
+
+.tablecompanydetailes {
+  /*border: 1px solid white;*/
+  margin-top: 540px;
+    display: inline-table;
+    margin-left: 15px;
+    height: 280px;
+    width: 230px;
+    display: inline-table;
+    
+}
+
+.comapanyname {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+}
+
+.listecompany {
+  list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 3px;
+    color: #999999;
+    font-size: 14px;
+    margin-top: 17px;
+}
+
+.linkedintext{
+  font-size: 14px;
+  position: absolute;
+  margin-left: 44px;
+  color: #a7c353;
+  padding-top: 10px;
+}
+
+.linkedin {
+  margin-top: 17px;
+}
+
+.twitter {
+  margin-top: 30px;
+}
+
+.twittertext{
+  font-size: 14px;
+  position: absolute;
+  margin-left: 44px;
+  color: #a7c353;
+  margin-top: 35px;
+}
+
+.pinterest {
+  margin-top: 30px;
+}
+
+.pinteresttext{
+  font-size: 14px;
+  position: absolute;
+  margin-left: 44px;
+  color: #a7c353;
+  margin-top: 35px;
+}
+
+.rss {
+  margin-top: 30px;
+}
+
+.rsstext{
+  font-size: 14px;
+  position: absolute;
+  margin-left: 44px;
+  color: #a7c353;
+  margin-top: 35px;
+}
+
+#Blog {
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: -5px
+}
+
+#Posted {
+  font-size: 12px;
+  margin-left: -3px;
+  margin-top: 3px;
+}
+
+#vestibulaunu {
+  color: #999999;
+  font-size: 14px;
+  margin-top: 36px;
+  margin: -3px
+}
+
+#readmoreblog {
+  text-decoration: none;
+  color: #a7c353;
+  font-size: 14px;
+  float: right;
+  margin-top: -8px;
+}
+
+#Postedunu{
+  font-size: 12px;
+  margin-left: -5px;
+  margin-top: 2px;
+}
+
+#vestibula {
+  color: #999999;
+  font-size: 14px;
+  margin-top: -5px;
+}
+
+#readmoreblogunu {
+  text-decoration: none;
+  color: #a7c353;
+  font-size: 14px;
+  float: right;
+  margin-top: 12px
+}
+
+#name, #email {
+    height: 32px;
+    width: 214px;
+    padding: 2px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #555;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    background-color: #383838;
+    border-radius: 5px;
+    color: #999999;
+}
+
+input[type=text]:focus {
+    border: 2px solid #ccc;
+}
+
+input[type=submit] {
+  height: 31px;
+  width: 80px;
+  border-radius: 5px;
+  background-color: #a7c353;
+}
+
+.message {
+    padding-bottom: 90px;
+    padding-left: 10px;
+    padding-top: 5px;
+    width: 214px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    border: 2px solid #555;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    background-color: #383838;
+    border-radius: 5px;
+    color: #999999;
+    
+}
+
+.hrfinal {
+  width: 960px;
+  background-color: #555;
+  border: none;
+  height: 1px;
+  position: absolute;
+  margin-top: 1521px;
+  outline: none;
+  margin-left: 20px;
+}
+
+.textfinaleone {
+  color: #999999;
+  position: absolute;
+  margin-top: 1535px;;
+  margin-left: 20px;
+}
+
+.textfinaletwo {
+  color: #999999;
+  position: absolute;
+  margin-top: 1535px;
+  margin-left: 795px;
+}
+
+.logo {
+  margin-top: 40px;
+  margin-left: 25px;
+}
+
+.titleslide {
+  width: 60px;
+  height: 40px;
+  background-color: green;
+  margin-left: 40px;
+  display: block;
+}
+
+.hrclients{
+  width: 920px;
+  background-color: #d4d4d4;
+  border: none;
+  height: 1px;
+  position: absolute;
+  margin-top: 660px;
+  outline: none;
+  margin-left: 40px;
+  z-index: 1;
+}
+
+.hrfirst {
+  width: 920px;
+  background-color: #a7c353;
+  border: none;
+  height: 1px;
+  position: absolute;
+  margin-top: 113px;
+  outline: none;
+  margin-left: 40px;
+  z-index: 1;
+}
