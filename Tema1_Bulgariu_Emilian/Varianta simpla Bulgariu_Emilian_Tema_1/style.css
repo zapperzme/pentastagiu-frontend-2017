@@ -21,7 +21,8 @@ body {
 	background-color: white;
 	width: 90%;
 	max-width: 960px;
-	height: 98px;
+	min-height: 98px;
+	height: auto;
 	border-top: 5px solid #a7c353;
 }
 
@@ -31,19 +32,29 @@ body {
 	background-color: white;
 	width: 90%;
 	max-width: 960px;
-	height: 561px;
+	min-height: 561px;
+	height: auto;
 }
 
 .header .container-logo {
-	margin: 0px 20px;
-	border-bottom: 1px solid #a7c353;
+	margin: 0;	
 	height: 97px;
 	overflow: hidden;
+	width: 270px;
+	float: left;
+}
+
+.container-header {
+	margin: 0px 20px;
+	min-height: 97px;
+	height: auto;
+	overflow:  auto;
+	width: auto;
+	border-bottom: 1px solid #a7c353;
 }
 
 
-
-.header .container-logo a{
+.header a{
 	text-decoration: none;
 	color: #666666;
 	margin:0;
@@ -75,14 +86,11 @@ body {
 	top: -8px;
 }
 
-.header .container-logo .header-menu {
-	float: right;
-	position: absolute;
-	right: 0px;
-	top: 0px;
+.header .header-menu {
+	float: right;	
 }
 
-.header .container-logo .header-menu a {
+.header .header-menu a {
 	display: inline-block;
 	text-decoration: none;
 	font-family: Georgia, "Times New Roman", Times, serif;
@@ -92,11 +100,11 @@ body {
 	font-size: 1em;
 }
 
-.header .container-logo .header-menu #gallery {
+.header .header-menu #gallery {
 	padding-right: 20px;
 }
 
-.header .container-logo .active {
+.header .active {
 	background-color: #a7c353;
     color: white;
 }
@@ -109,7 +117,8 @@ body {
 
 .shout {
 	margin: 0 80px;
-	height: 136px;
+	min-height: 136px;
+	height: auto;
 }
 
 .shout blockquote {
@@ -272,7 +281,7 @@ body {
 	max-width: 960px;
 	padding: 30px 0px;
 	height: auto;
-	min-height: 300px;
+	min-height: 400px;
 	overflow: auto;    /* pentru a face ca height sa fie dinamic*/
 }
 
@@ -280,7 +289,7 @@ body {
 	margin: 0px 20px;
 	width: 28.4375%;  /* 273/960 */
 	min-width: 275px;
-	height: 500px;
+	height: auto;
 	padding: 0;
 	float: left;
 	color: #666666;
@@ -313,7 +322,7 @@ body {
 }
 
 .content .container .container-content .one-service {
-	margin: 8px 0px;
+	margin: 12px 0px;
 	padding: 0;
 }
 
@@ -361,7 +370,7 @@ body {
 	max-width: 960px;
 	height: auto;
 	min-height: 380px;
-	padding: 0;
+	padding: 5px 0;
 	overflow: auto;
 	border-bottom: 1px solid #3a3a3a;
 }
@@ -369,7 +378,7 @@ body {
 .footer .f-container {
 	margin: 0 10px;
 	min-width: 221px;
-	height: 350px;
+	height: auto;
 	padding: 0;
 	float: left;
 	color: #999999;
@@ -474,22 +483,29 @@ p.post-admin {
 	width: 90%;
 	max-width: 960px;
 	height: auto;
-	min-height: 50px;
 	padding: 0;
-	overflow: auto;
 	color: #999999;
+	overflow: auto;
 	
 }
 
 .copyright #copy-left {
-	position: absolute;
-	left: 0;
-	padding: 10px 0;
+	padding: 10px 20px 10px 0;
+	float: left;
+	overflow: hidden;
+	word-wrap: wrap;
+	
 }
 
 .copyright #copy-right{
-	position: absolute;
-	right: 0;
-	padding: 10px 0;
+	float: right;
+	padding: 10px 0 10px 20px;
+	min-width: 200px;
 	
+}
+
+@media screen and ( max-width: 1056px){
+	.header .header-menu a {
+		padding: 20px 8px;
+	}
 }
