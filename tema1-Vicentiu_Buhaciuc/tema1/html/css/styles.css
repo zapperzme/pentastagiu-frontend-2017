@@ -6,6 +6,7 @@ body {
    min-height: 100%;
    margin: auto;
    background-color: #313131;
+   margin: 0 auto;
 }
 #container
 {
@@ -104,6 +105,7 @@ li a:hover {
 	
 }
 #slider{
+	position: relative;
 	margin-left: auto;
 	margin-right: auto;
 	height: 427px;
@@ -113,34 +115,38 @@ li a:hover {
 #sliderimage{
 	height: 427px;
 	width: 920px;
-	position: relative; 
 	margin-left: 100px;
 }
 h2{
-	width: 300px;
+   position: absolute;
+   width: 300px;
    height: 41px;
-   position: absolute; 
-   top: 450px; 
-   left:1050px;
+   top: 200px; 
+   left: 550px;
    
 	
 }
 h2 span { 
+   position: absolute;
+   display: inline-block;
    color: white; 
    font: 22px Georgia; 
    letter-spacing: -1px;  
    background-color: #a7c353;
-   padding: 10px; 
+   padding: 10px;
+
 }
+
 h3{
-	width: 270px;
-	height: 70px;
-   position: absolute; 
-   top: 500px; 
-   left:1050px
+	position: absolute;
+   width: 270px;
+   height: 70px;
+   top: 250px; 
+   left: 550px;
 	
 }
 h3 span { 
+    position: absolute;
     background-color: #ffffff;
     font: 13px Georgia; 
 	margin: auto;
@@ -148,6 +154,27 @@ h3 span {
     vertical-align: middle;
     display: flex;
     align-items: center;
+}
+#arrowleft {
+  display: inline-block;
+  background-image: url("../img/arrowleft.png");
+  background-repeat: no-repeat;
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  top: 149px;
+  left: 10px;
+}
+
+#arrowright {
+  display: inline-block;
+  background-image: url("../img/arrowright.png");
+  background-repeat: no-repeat;
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  top: 149px;
+  right: 5px;
 }
 hr{
 	position: relative;
