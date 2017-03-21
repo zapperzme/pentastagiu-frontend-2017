@@ -95,9 +95,10 @@ transition: opacity .2s;
 color: #999999;
 }
 .nav {
-position: absolute;
-height: 100%;
-width: 193%;
+top: 45%;
+position: relative;
+width: 191%;
+z-index: 1001;
 
 }
 .nav label{
@@ -105,28 +106,19 @@ border : 2px solid #a7c353;
 width: 40px;
 height: 40px;
 background-color : #000000;
-z-index: 1001;
-
 }
 .nav label.prev {
 text-align: center;
 color : #a7c353;
-padding: 0;
 margin:0;
 position: absolute;
-top: 50%;
 left: 0px;
-bottom:0px;
 font-size: 33px;
 }
 .nav label.next {
 text-align: center;
 color : #a7c353;
-top: 50%;
 font-size: 33px;
-padding: 0;
 margin:0;
 position: absolute;
-right: 0px;
-bottom:0px;
 }

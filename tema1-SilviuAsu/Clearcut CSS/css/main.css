@@ -3,16 +3,16 @@ margin-right: 20px;
 margin-left: 20px;
 height: 100%;
 overflow-x: hidden;
+
 }
 body {
 margin: 0;
 padding: 0;
 font-family : 'Georgia', "Times New Roman", Times, serif;
-background-color : #313131;
+max-width: 960px;
+margin:0 auto;
 }
-.content {
-background-color: #ffffff;
-}
+
 .header_content {
 padding-top : 50px;
 padding-bottom : 50px;
@@ -34,7 +34,8 @@ border-color : transparent;
 margin: 0;
 border: 0;
 }
-.padding20 {
+.box_container {
+	position: 	relative;	
 padding-left: 20px;
 padding-right: 20px;
 }
@@ -59,8 +60,10 @@ width: 33.33%;
 }
 #largebox1 {
 position: absolute;
+background-color: #313131;
+margin-top: 40px;
 width: 100%;
-height: 550px;
+height: 500px;
 }
 #box4 {
 float: left;
@@ -173,6 +176,10 @@ border-color : transparent;
 margin-top : 15px;
 border : 0;
 }
+.text_custom {
+margin-left: 	10px;
+margin-right: 	10px;
+}
 .text_custom h3 {
 color : #ffffff;
 }
@@ -190,9 +197,11 @@ padding-bottom : 10px;
 }
 .text_custom h5 {
 margin-top: 0px;
+margin-bottom: 10px;
 font-size : 12px;
 }
 .text_custom h5 > a {
+
 color : #a7c353;
 }
 .fa-circle {
@@ -200,16 +209,19 @@ color : #383838;
 }
 .fa-stack {
 display : inline-block;
-padding : 10px;
 }
 .fa-lg {
 padding-top : 0;
 }
+.my-text a {
+	float: right;
+	width: 	160px;
+}
 .text3 {
-padding-top : 15px;
+
 padding-right : 0;
 padding-left : 0;
-padding-bottom : 10px;
+
 }
 .text3 span > a {
 color : #a7c353;
@@ -219,7 +231,7 @@ margin-left : 15px;
 .text4 a {
 color : #a7c353;
 text-decoration : none;
-margin-left : 200px;
+float: 	right;	
 }
 .form_custom input[type=text] {
 width: 80%;
@@ -260,9 +272,9 @@ cursor: pointer;
 footer {
 background-color: #313131;
 position: absolute;
-bottom: 0;
-width: 97%;
-text-align: center;
+bottom: 0px;
+width: 100%;
+
 }
 footer p{
 color: #999999;

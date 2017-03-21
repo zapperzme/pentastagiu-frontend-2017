@@ -11,7 +11,8 @@ height: 56px;
 height: 100%;
 }
 #largebox1 {
-height: 100%;
+text-align: center;
+height: 79%;
 }
 #box1 {
 float: none;
@@ -56,6 +57,12 @@ height: 250px !important;
 .sliderinner>ul>li>img {
 height: 250px !important;
 }
+.nav {
+
+width: 179%;
+
+
+}
 footer {
 position: relative;
 bottom: 0;
@@ -66,4 +73,5 @@ footer p {
 font-size: 10px;
 
 }
+
 }
