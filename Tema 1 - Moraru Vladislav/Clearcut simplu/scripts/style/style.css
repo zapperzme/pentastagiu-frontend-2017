@@ -1,0 +1,519 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color:#282828;
+}
+
+ul li{
+    cursor: pointer;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+header{
+    margin: 0 auto;
+    width:960px;
+    background-color: white;
+    border-top:5px solid #a7c353;
+}
+
+a{
+    text-decoration: none;
+}
+.border-botom{
+    border-bottom:1px solid #a7c353;
+    width: 920px;
+    margin:0 auto;
+    text-align: right;
+    height: 95px;
+}
+.nav-bar ul li .active{
+    text-decoration: none;
+    background-color:#a7c353;
+    cursor: pointer;
+    color:#fff;
+}
+
+.nav-bar ul li{
+    display: inline-block;
+}
+.logo {
+    float: left;
+    padding: 25px 35px;
+}
+.nav-bar ul li{
+    margin-top:49px ;
+}
+.nav-bar ul li a{
+    font-size: 12px;
+    padding:53px 22px 29px 22px;
+    color:#979797 ;
+}
+.nav-bar ul li a:hover{
+    text-decoration: none;
+    background-color:#a7c353;
+    cursor: pointer;
+    color: white;
+}
+
+
+main{
+    margin: 0 auto;
+    width:960px;
+    background-color: white;
+    height: 1080px;
+
+}
+.main-header h1{
+    font-size:22px;
+    margin:0 auto;
+    font-style:italic;
+    color:#a7c353;
+    width:70%;
+    padding-top:50px;
+    text-align: center;
+}
+#myCarousel{
+    margin: 0 auto;
+    border-bottom: 1px solid #a7c353;
+}
+.container,.slider,.carousel{
+    width: 920px;
+    margin: 0 auto;
+    margin-right: 20px;
+    height: 422px;
+
+}
+.carousel-indicators{
+    bottom: 42px
+}
+.carousel-indicators li{
+    background-color: #a7c353;
+    border-color: #a7c353;
+
+}
+.carousel-control{
+    padding-top: 150px;
+    background-image: none;
+    background-color: transparent;
+    bottom: 77px;
+
+}
+.rightText{
+    position:absolute;
+    width:35%;
+    left:53%;
+    top:60%;
+}
+
+.rightText h3{
+    background-color:#a7c353;
+    padding:6px 0;
+    text-align:center;
+    font-size:22px;
+    text-shadow:none;
+    text-transform: capitalize;
+    color:#fff;
+    margin-bottom: 7px;
+
+}
+
+.rightText p{
+    background-color:#fff;
+    color:#999999;
+    padding:8px 10px;
+    text-align:justify;
+    text-shadow:none;
+}
+.second-part{
+    width: 920px;
+
+}
+
+
+
+
+.second-part {
+    width: 920px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.mainAll{
+    margin-top:40px;
+}
+
+.aboutUs{
+    float:left;
+    width:33%;
+    padding:0 10px;
+    margin-bottom:40px;
+}
+
+.services{
+    float:left;
+    width:33%;
+    padding:0 10px;
+    margin-bottom:40px;
+}
+
+.clients{
+    float:left;
+    width:33%;
+    padding:0 10px;
+    margin-bottom:40px;
+}
+
+.read{
+    margin-top:10px;
+    float:right;
+}
+
+
+
+.aboutUs h3{
+    font-size:22px;
+    color:#666666;
+    margin-top:40px;
+    margin-bottom:30px;
+}
+
+.aboutUs p{
+    font-size:13px;
+    color:#999999;
+    margin-top:20px;
+    line-height:1.5;
+}
+
+.aboutUs a{
+    font-size:13px;
+    color:#a7c353;
+}
+
+.thumbnail{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+
+.services h3{
+    font-size:22px;
+    color:#666666;
+    margin-top:40px;
+    margin-bottom:30px;
+}
+
+.services p{
+    font-size:13px;
+    color:#999999;
+    line-height:1.5;
+}
+
+.services .image-text h4{
+    color:#878787;
+    font-size:15px;
+    font-weight:bold;
+}
+
+.services a{
+    font-size:13px;
+    color:#a7c353;
+    float:right;
+}
+
+.image{
+    float:left;
+    width:30%;
+    margin-bottom: 27px;
+}
+
+.image-text{
+    float:left;
+    width:65%;
+}
+
+.image-text h4{
+    margin-bottom:5px;
+}
+
+
+.clients h3{
+    font-size:22px;
+    color:#666666;
+    margin-top:40px;
+    margin-bottom:30px;
+}
+
+.clients p{
+    font-size:13px;
+    color:#999999;
+    line-height:1.5;
+}
+
+.clients a{
+    font-size:13px;
+    color:#a7c353;
+    float:right;
+}
+
+.qoutes{
+    margin-bottom:45px;
+}
+
+.quoteImg{
+    float:left;
+    width:30%;
+}
+
+.quoteText{
+    float:left;
+    width:65%;
+    margin-top: 15px;
+}
+
+.qoutes .quoteText h4{
+    color: #878787;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.qoutes .quoteText span{
+    font-weight:normal;
+}
+
+
+
+footer{
+    width: 960px;
+    margin: 0 auto;
+    border-bottom:1px solid #3a3a3a;
+    background-color:#313131;
+}
+
+.company{
+    float:left;
+    width:23%;
+    margin-top:40px;
+    padding:  0 8px;
+}
+
+.social{
+    float:left;
+    width:23%;
+    margin-top:40px;
+    padding: 0 8px;
+}
+
+.blog{
+    float:left;
+    width:23%;
+    margin-top:40px;
+    padding: 0 8px;
+}
+
+.contact{
+    float:left;
+    width:28%;
+    margin-top:40px;
+    padding:  0 8px;
+}
+
+
+.company header{
+    border-bottom:1px solid #3a3a3a;
+    margin-bottom:20px;
+}
+
+.company h4{
+    color:#f6f6f6;
+    margin-bottom: 10px;
+}
+
+.company ul{
+    padding-left:0;
+    list-style-type:none;
+    margin-bottom:15px;
+}
+
+.company ul li{
+    color:#999999;
+    font-size:13px;
+    line-height:1.5;
+}
+
+.company ul li span{
+    color:#a7c353;
+}
+
+.company ul .bold{
+    font-weight:bold;
+}
+
+
+.social header{
+    border-bottom:1px solid #3a3a3a;
+    margin-bottom:20px;
+}
+
+.social h4{
+    color:#f6f6f6;
+    margin-bottom: 10px;
+}
+
+.social-img {
+    float:left;
+    width:30%;
+    margin-bottom: 20px;
+}
+
+.social-text h5{
+    color:#a7c353;
+    font-size:13px;
+    padding: 10px 0;
+}
+
+.social-text{
+    float:left;
+    width:65%;
+    border-bottom:1px solid #3a3a3a;
+}
+
+
+.blog header{
+    border-bottom:1px solid #3a3a3a;
+    margin-bottom:20px;
+}
+
+.blog h4{
+    color:#f6f6f6;
+    margin-bottom: 10px;
+}
+
+.blog .title{
+    margin-top:10px;
+    margin-bottom: 40px;
+}
+
+.blog .title p{
+    color:#999999;
+    font-size:13px;
+    line-height:1.5;
+}
+
+.blog .title h3{
+    color:#999999;
+    font-weight:bold;
+    font-size:13px;
+    margin-bottom: 10px;
+}
+
+.blog .title a{
+    color:#a7c353;
+    font-size:13px;
+}
+
+
+.contact header{
+    border-bottom:1px solid #3a3a3a;
+    margin-bottom:20px;
+}
+
+.contact h4{
+    color:#f6f6f6;
+    margin-bottom: 10px;
+}
+
+input[type='submit']{
+    padding:5px 15px;
+    font-size:15px;
+    color:#313131;
+    background-color:#a7c353;
+    font-weight:bold;
+    text-transform:uppercase;
+    border-radius:5px;
+}
+
+textarea, input[type='text']{
+    background-color:#383838;
+    padding:5px;
+    border-radius:5px;
+    border:none;
+    width: 100%;
+}
+
+
+.footerText{
+    font-size:13px;
+    overflow:hidden;
+    border-top:1px solid #3a3a3a;
+    padding:20px 5px;
+}
+
+.footerText p{
+    color:#999999;
+}
+
+.left{
+    float:left;
+}
+
+.right{
+    float:right;
+}
