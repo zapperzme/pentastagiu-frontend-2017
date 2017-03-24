@@ -105,6 +105,28 @@ section.slider{
     background-color: #353535;
     position: relative;
 }
+section.slider .arrows{
+    position: absolute;
+    top: calc(50% - 16px);
+    left: 20px;
+    right: 20px;
+    width: calc(100% - 40px);
+}
+section.slider .arrows i{
+    width: 40px;
+    height: 40px;
+    font-size: 32px;
+    color: #a7c353;
+    background-color: black;
+    border: 1px solid #a7c353;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 2px 13px;
+    cursor: pointer;
+}
+section.slider .arrows i:last-child{
+    float: right;
+}
 section.slider .description{
     position: absolute;
     right: 50px;
@@ -271,7 +293,8 @@ nav.slider-nav .slider-nav-circle:last-child{
     color: grey;
     position: absolute;
     left: 10px;
-    top: -85px;
+    top: -15px;
+    transform: rotate(180deg);
 }
 .column section.testimonial h3 span{
     font-weight: bold;
@@ -331,6 +354,18 @@ footer::after {
     margin-top: 10px;
     padding: 10px 0;
     border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.social-links li i{
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    color: ghostwhite;
+    background-color: #383838;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    cursor: pointer;
+    margin-right: 5px;
 }
 
 .blog-post{
