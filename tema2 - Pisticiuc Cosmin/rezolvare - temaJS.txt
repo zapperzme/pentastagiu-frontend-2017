@@ -57,7 +57,11 @@ var obj = {
     1: 'b',
     2: 'c'
 };
-var vals = Object.values(obj);
+var value = [];
+for(key in obj){
+    value.push(obj[key]);
+}
+
 
 6. Scrieti o functie care sa primeasca 2 argumente si sa returneze suma acestora doar daca numarul este mai mare ca 20.
 
@@ -136,9 +140,10 @@ var obj2 = {
     tenth: 34,
     last: -2
 }
-
-var vals2 = Object.values(obj2);
-
+var value2 = [];
+for(key in obj2){
+    value2.push(obj2[key]);
+}
 
 function bubbleSort(a) {
     var swapped;
@@ -154,4 +159,12 @@ function bubbleSort(a) {
         }
     } while (swapped);
     return a;
+    //var temp = null;
+    //    for (var i = 0; i < a.length; i++) {
+    //        if (a[i] > a[i + 1]) {
+    //            temp = a[i];
+    //            a[i] = a[i + 1];
+    //            a[i + 1] = temp;
+    //        }
+    //    }
 }
