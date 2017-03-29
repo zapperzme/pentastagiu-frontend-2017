@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Homework</title>
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+	//1. Aranjati numerele din array in ordine crescatoare: [20, -11, 9, 0, -1, 34, -7] 
+		increaseOrder();
+		//2. Inlaturati valoarea 2 din array: [1,2,3,4,2,5,7,2,2]
+		removeNum();
+	</script>
+<!-- 3. Afisati din array-ul ["a", "b", "c", "dd", "a"] doar valorile b si c. -->
+<script type="text/javascript">
+		var numbers12 = ["a", "b", "c", "dd", "a"];
+		for (var j = 0; j < numbers12.length; j++) {
+		if (numbers12[j] !== "b" && numbers12[j] !== "c") {
+			document.write("<br />" + numbers12[j] + " ");
+		}
+	}
+</script>
+<!-- 4. Scrieti o functie pentru a afisa in consola data de astazi, in formatul dd-mm-yyyy -->
+<script type="text/javascript">
+function formatDate(date) {
+  var monthNames = [
+    "January", "February", "March",
+    "April", "May", "June", "July",
+    "August", "September", "October",
+    "November", "December"
+  ];
+
+  var day = date.getDate();
+  var monthIndex = date.getMonth();
+  var year = date.getFullYear();
+
+  return "<br />" + day + ' ' + monthNames[monthIndex] + ' ' + year;
+}
+
+document.write(formatDate(new Date()));  // show current date-time in DOM
+</script>
+<!-- 5. Afisati valorile obiectului  { 0: 'a', 1: 'b', 2: 'c' } intr-un array nou -->
+<br />
+<script type="text/javascript">
+	
+	var journal = {
+		0: 'a', 
+		1: 'b', 
+		2: 'c'
+	}
+	var vectorNou = [];
+	
+	for (var i = 0; i < Object.keys(journal).length; i++) {
+		vectorNou.push(journal[i]);
+		document.write (vectorNou[i] + " ");
+	}
+
+
+</script>
+
+<!-- 6. Scrieti o functie care sa primeasca 2 argumente si sa returneze suma acestora doar daca numarul este mai mare ca 20. -->
+<br />
+<script type="text/javascript">
+
+	function adunare(primul, urmatorul) {
+		if (primul > 20 || urmatorul >20) {
+			return primul + urmatorul;
+		}
+	
+	}
+	document.write(adunare(300,1));
+</script>
+
+<br />
+<!-- 7. Afisati index pentru fiecare valoare 2 din array: [1,2,3,4,2,5,7,2,2]  -->
+<script type="text/javascript">
+var numbers5 = [1,2,3,4,2,5,7,2,2];
+for (var i = 0; i < numbers5.length; i++) {
+	if (numbers5[i] === 2) {
+	document.write(i + " ");
+	}
+}
+</script>
+<br />
+<!-- 8. Inlaturati valoarea 2 din array:  returnand array original -->
+<script type="text/javascript">
+	var numbers6 = [1,2,3,4,2,5,7,2,2];
+		for (var i = 0; i < numbers6.length; i++) {
+		if (numbers6[i] === 2) {
+			 numbers6.shift();
+			 numbers6.pop();
+		}document.write(numbers6[i] + " ");
+	}
+	
+</script>
+
+<!-- 9. Scrieti o functie pentru a face split la un string si a-l trasnforma intr-un array de cuvinte - "This is some text" --><br/>
+<script type="text/javascript">
+var myString = "This is some text";
+var splits = myString.split(' ').join("<br />");
+
+document.write(splits);
+</script>
+<!-- 10. Pentru valorile din array: [0,"text",9,undefined,"undefined",-5,null,"null"] afisati in consola valoarea si tipul ei. Ex: "9 is a number" -->
+<!-- 11. Pentru exercitiul anterior, afisati corect forma acordului "an" / "a" in functie de cuvantul ce urmeaza -->
+<br/>
+<script type="text/javascript">
+
+var arrayValues = [0,"text",9,undefined,"undefined",-5,null,"null"];
+
+for (var i = 0; i < arrayValues.length; i++) {
+	var arrayValues1 = typeof arrayValues[i];
+	if(arrayValues[i] === undefined || arrayValues[i] === null) {
+	document.write("</br>" + arrayValues[i] + " is an " + arrayValues1 );
+} else {
+	document.write("</br>" + arrayValues[i] + " is a " + arrayValues1 );
+}
+}
+</script>
+
+
+<!-- 12. Afisati in consola in mod crescator valorile din obiectul urmator { first:13, second:6, thrid:0, tenth:34, last:-2} -->
+</br>
+
+<script type="text/javascript">
+var list = { 
+	first:13, 
+	second:6, 
+	thrid:0, 
+	tenth:34,
+	last:-2
+}
+var sorted = [];
+for (var item in list) {
+    sorted.push([item, list[item]]);
+}
+
+sorted.sort(function(a, b) {
+    return a[1] - b[1];
+});
+for (var item in sorted){
+    document.write("</br>"+ "Property of  "  + sorted[item]);
+}
+</script>
+
+</body>
+</html>
