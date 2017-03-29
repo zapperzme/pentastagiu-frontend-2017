@@ -1,0 +1,103 @@
+1. Aranjati numerele din array in ordine crescatoare: [20, -11, 9, 0, -1, 34, -7]
+function sortNumber(a,b) {
+    return a - b;
+}
+
+var numArray = [20, -11, 9, 0, -1, 34, -7];
+numArray.sort(sortNumber);
+alert(numArray.join(","));
+
+2. Inlaturati valoarea 2 din array: [1,2,3,4,2,5,7,2,2] 
+var arr = [1,2,3,4,2,5,7,2,2];
+var val = 2;
+for(var i = arr.length; i > 0; i--) {
+ if (arr[i] === val) {
+     arr.splice(i, 1);
+    }
+}
+document.write(arr);
+
+3. Afisati din array-ul ["a", "b", "c", "dd", "a"] doar valorile b si c.
+var array = ["a", "b", "dd", "a", "c"];
+for(var i = 0; i < array.length; ++i) {
+ if (array[i] === 'b' || array[i] === 'c') {
+     document.write(array[i]);
+    }
+}
+
+4. Scrieti o functie pentru a afisa in consola data de astazi, in formatul dd-mm-yyyy
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+
+today = dd+'/'+mm+'/'+yyyy;
+document.write(today);
+
+5. Afisati valorile obiectului  { 0: 'a', 1: 'b', 2: 'c' } intr-un array nou
+var obj = { 0: 'a', 1: 'b', 2: 'c' };
+var array = Object.values(obj);
+console.log(array);
+
+6. Scrieti o functie care sa primeasca 2 argumente si sa returneze suma acestora doar daca numarul este mai mare ca 20.
+function sumIfGreaterThanTwenty(a,b) {
+	if(a+b > 20) {
+    	return a+b;
+    }
+}
+sumIfGreaterThanTwenty(15, 20);
+
+7. Afisati index pentru fiecare valoare 2 din array: [1,2,3,4,2,5,7,2,2] 
+var array = [1,2,3,4,2,5,7,2,2];
+var indexValues = [];
+var val = 2;
+for(var i = array.length; i > 0; i--) {
+ if (array[i] === val) {
+     	indexValues.push(i);
+    }
+}
+document.write(indexValues.reverse());
+
+
+8. Inlaturati valoarea 2 din array: [1,2,3,4,2,5,7,2,2] returnand array original
+var array = [1,2,3,4,2,5,7,2,2];
+var val = 2;
+for(var i = array.length; i > 0; i--) {
+ if (array[i] === val) {
+     array.splice(i, 1);
+    }
+}
+document.write(array);
+
+9. Scrieti o functie pentru a face split la un string si a-l trasnforma intr-un array de cuvinte - "This is some text"
+var str = "This is some text";
+var res = str.split(" ");
+console.log(res);
+
+10. Pentru valorile din array: [0,"text",9,undefined,"undefined",-5,null,"null"] afisati in consola valoarea si tipul ei. Ex: "9 is a number"
+var array = [0,"text",9,undefined,"undefined",-5,null,"null"];
+for(var i = 0; i < array.length; i++) {
+	console.log(array[i] + " is a " + typeof array[i]);
+}
+
+11. Pentru exercitiul anterior, afisati corect forma acordului "an" / "a" in functie de cuvantul ce urmeaza
+var array = [0,"text",9,undefined,"undefined",-5,null,"null"];
+var vocale = /^[aeiou]$/i;
+for(var i = 0; i < array.length; i++) {
+	if(vocale.test((typeof array[i]).charAt(0))) {
+		console.log(array[i] + " is an " + typeof array[i]);
+	} else {
+		console.log(array[i] + " is a " + typeof array[i]);
+	}
+}
+
+12. Afisati in consola in mod crescator valorile din obiectul urmator { first:13, second:6, thrid:0, tenth:34, last:-2 }
+var obj = { first:13, second:6, thrid:0, tenth:34, last:-2 };
+
+function sortNumber(a,b) {
+    return a - b;
+}
+
+var array = Object.values(obj);
+array.sort(sortNumber);
+console.log(array);
