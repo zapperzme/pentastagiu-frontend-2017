@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <title>Afisati in consola in mod crescator valorile din obiectul urmator { first:13, second:6, thrid:0, tenth:34, last:-2}</title>
+</head>
+<body>
+
+  <p>Click the button</p>
+
+  <button onclick="myFunction()">Show</button>
+
+  <p id="demo"></p>
+
+
+<script>
+
+function myFunction(){
+  var object = { first:13, second:6, third:0, tenth:34, last:-2};
+  var sortable = [];
+  var y;
+  for( y in object){
+    sortable.push([y, object[y]]);
+}
+
+sortable.sort(function(a, b) {
+    return a[1] - b[1];
+});
+
+document.getElementById("demo").innerHTML = sortable;
+}
+
+
+</script>
+
+</body>
+</html>

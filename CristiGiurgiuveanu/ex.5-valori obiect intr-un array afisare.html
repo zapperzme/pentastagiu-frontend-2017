@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <title>afisare valorile unui obiect intr-un array</title>
+</head>
+<body>
+
+  <p>Click the button </p>
+
+  <button onclick="myFunction()">Show</button>
+
+  <p id="demo"></p>
+
+
+<script>
+
+function myFunction(){
+var numbers = { 0: 'a', 1: 'b', 2: 'c' }
+var array=[];
+var x;
+for (x in numbers) {
+    array += numbers[x] + " ";
+}
+document.getElementById("demo").innerHTML = array;
+}
+
+</script>
+
+</body>
+</html>

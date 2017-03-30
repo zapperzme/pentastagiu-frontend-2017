@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <title>Pentru valorile din array: [0,"text",9,undefined,"undefined",-5,null,"null"] afisati in consola valoarea si tipul ei. Ex: "9 is a number"</title>
+</head>
+<body>
+
+  <p>Click the button</p>
+
+  <button onclick="myFunction()">Show</button>
+
+  <p id="demo"></p>
+
+
+<script>
+var array = [0,"text",9,undefined,"undefined",-5,null,"null"];
+
+function myFunction(){
+for(var i=0; i<array.length;i++){
+   if(typeof(array[i]) == 'object') {
+    console.log(array[i] + " is an " + typeof(array[i]));
+  }
+  else if (typeof(array[i]) == 'undefined'){
+    console.log(array[i] + " is " + typeof(array[i]));
+  }
+  else{
+    console.log(array[i] + " is a " + typeof(array[i]));
+  }
+}
+}
+
+</script>
+
+</body>
+</html>

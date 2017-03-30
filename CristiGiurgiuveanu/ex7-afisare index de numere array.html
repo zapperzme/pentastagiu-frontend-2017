@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <title>afisare index pentru fiecare valoare 2 din array</title>
+</head>
+<body>
+
+  <p id="demo"></p>
+
+<script>
+
+  var array = [1,2,3,4,2,5,7,2,2];
+
+ function getAllIndexes(arr, val) {
+     var indexes = [], i = -1;
+     while ((i = arr.indexOf(val, i+1)) != -1){
+         indexes.push(i);
+     }
+     return indexes;
+}
+ var indexes = getAllIndexes(array, 2);
+
+ document.getElementById("demo").innerHTML = indexes;
+
+
+</script>
+
+</body>
+</html>

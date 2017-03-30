@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <title>Inlaturarea valorii 2 din array</title>
+</head>
+<body>
+
+  <p>Click the button</p>
+
+  <button onclick="myFunction()">Sort</button>
+
+  <p id="demo"></p>
+
+
+<script>
+
+
+var array = [1,2,3,4,2,5,7,2,2];
+
+function myFunction() {
+  for( var i = array.length; i--;){
+  if ( array[i] === 2){
+  array.splice(i, 1);
+   }
+  }
+    document.getElementById("demo").innerHTML = "the numbers are" + " " + array;
+  }
+
+</script>
+
+</body>
+</html>

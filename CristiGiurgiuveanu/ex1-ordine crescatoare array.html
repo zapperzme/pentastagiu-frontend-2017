@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <title>Aranjare numere ordine crescatoare array</title>
+</head>
+<body>
+
+  <p>Click the button to sort the array in ascending order.</p>
+
+  <button onclick="myFunction()">Sort</button>
+
+  <p id="demo"></p>
+
+
+<script>
+
+var array= [20, -11, 9, 0, -1, 34, -7];
+var ascending = [];
+
+function myFunction() {
+     var order = array.sort(function(a, b){return a - b});
+     ascending.push(order);
+    document.getElementById("demo").innerHTML = "the numbers are" + " " + ascending;
+}
+
+
+</script>
+
+</body>
+</html>
