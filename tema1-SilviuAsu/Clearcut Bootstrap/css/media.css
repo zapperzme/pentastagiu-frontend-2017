@@ -1,0 +1,90 @@
+@media screen and (max-width:768px) {
+body {
+padding-top : 60px;
+}
+#content {
+position : relative;
+left : 2%;
+width : 96%;
+}
+.page-scroll {
+font-size : 8px;
+}
+.navbar-default .navbar-nav > li {
+height : 56px;
+}
+.navbar-default .navbar-nav > li > a {
+padding-left : 8px;
+padding-right : 8px;
+}
+.navbar.navbar-custom .navbar-nav > .active > a, .navbar.navbar-custom .navbar-nav > .active > a:focus {
+height : 100%;
+}
+.navbar-default .navbar-nav > li > a:hover {
+height : 54px;
+}
+.navbar-nav > li > a.page-scroll {
+padding-top : 25px;
+}
+.jumbotron p {
+font-size : 12px;
+}
+.page-scroll {
+font-size : 10px;
+}
+.big span {
+font-size : 22px;
+}
+.small span {
+font-size : 12px;
+}
+.big span:first-letter {
+font-size : 28px;
+}
+.carousel-caption h3 {
+font-size : 16px;
+}
+.carousel-caption p {
+font-size : 12px;
+}
+.carousel-caption {
+right : 15%;
+left : 15%;
+width : 70%;
+padding-bottom : 10px;
+bottom : 0;
+}
+}
+@media screen and (max-width:360px){
+.big span {
+font-size : 12px;
+}
+.small span {
+font-size : 10px;
+}
+.big span:first-letter {
+font-size : 16px;
+}
+.carousel-caption {
+right : 5%;
+left : 5%;
+width : 90%;
+bottom : 0;
+padding-bottom : 5px;
+}
+.carousel-caption h3 {
+font-size : 12px;
+}
+.carousel-caption p {
+font-size : 10px;
+}
+.image1 {
+width : 100%;
+}
+.text1 {
+padding-left : 0;
+}
+.title1 {
+padding : 0;
+}
+} 
