@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+		<title> Exercitii JavaScript</title>
+	</head>
+	<body>
+		<script>
+		//Problema 1. 
+		//Aranjati numerele din array in ordine crescatoare: [20, -11, 9, 0, -1, 34, -7]
+		console.log("--- problema 1 ---");
+		var arr=[20, -11, 9, 0, -1, 34, -7];
+		console.log(arr.sort(function(a, b) {return a - b;}));
+		
+		
+		//problema 2 si 8
+		//P2:Inlaturati valoarea 2 din array: [1,2,3,4,2,5,7,2,2] (p8:Inlaturati valoarea 2 din array: [1,2,3,4,2,5,7,2,2] returnand array original)
+		console.log("--- problema 2 & 8 ---");
+				
+		var array = [1,2,3,4,2,5,7,2,2];
+		function removeArrElement(array,element){
+			for(var i=0;i<array.length;i++)
+				if(array[i]===element) array=array.slice(0,i).concat(removeArrElement(array.slice(i+1),element));
+			return array;
+		}
+		
+		console.log(removeArrElement(array,2));
+		
+		//Problema 3. 
+		//Afisati din array-ul ["a", "b", "c", "dd", "a"] doar valorile b si c.
+		console.log("--- problema 3 ---");
+		var arr=["a", "b", "c", "dd", "a"];
+		var searchValues=["b","c"];
+		arr.forEach(function(item,index){
+			if(searchValues.indexOf(item)!==-1) console.log(item);
+		})		
+		
+		//Problema 4. 
+		//Scrieti o functie pentru a afisa in consola data de astazi, in formatul dd-mm-yyyy
+		console.log("--- problema 4 ---");
+		function dataAzi(){
+			var data="";
+			var today = new Date();
+			var zi=today.getDate(), luna=today.getMonth()+1, an=today.getFullYear();
+			if(zi<10) zi="0"+zi;
+			if(luna<10) luna="0"+luna;
+			data=zi+"-"+luna+"-"+an;
+			return data;			
+		}
+		
+		console.log(dataAzi());
+	
+		//Problema 5. 
+		//Afisati valorile obiectului  { 0: 'a', 1: 'b', 2: 'c' } intr-un array nou
+		console.log("--- problema 5 ---");
+		var obj={ 0: 'a', 1: 'b', 2: 'c' };           //sau scriem doar console.log(Object.values(obj));
+		var arr=[];
+		for(var x in obj)
+			arr.push(obj[x]);  
+			
+		console.log(arr);
+		
+		//Problema 6. 
+		//Scrieti o functie care sa primeasca 2 argumente si sa returneze suma acestora doar daca numarul este mai mare ca 20.
+		console.log("--- problema 6 ---");
+		function sumGT20(a,b){
+			var sum=a+b;
+			if(sum>20) return sum;
+			else return "Suma nu este mai mare ca 20";
+		}
+		
+		console.log(3+"+"+25+"="+sumGT20(3,25));
+		console.log(-11+"+"+30+"="+sumGT20(-11,30));
+		
+		//Problema 7. 
+		//Afisati index pentru fiecare valoare 2 din array: [1,2,3,4,2,5,7,2,2] 
+		console.log("--- problema 7 ---");
+		var arr=[1,2,3,4,2,5,7,2,2];
+		arr.forEach(function(item,index){
+			if(item===2) console.log(item, " index ",index);
+		});
+		
+		//Problema 9. 
+		//Scrieti o functie pentru a face split la un string si a-l trasnforma intr-un array de cuvinte - "This is some text"
+		console.log("--- problema 9 ---");
+		var str="This is some text";
+		function splitStr(str){
+			var tablouCuv=str.split(" ");  //folosim functia de la problema 8 pentru a elimina si spatiile consecutive
+			return removeArrElement(tablouCuv,"");
+		}
+		
+		console.log(splitStr(str));
+		
+		//Problema 10. 
+		//Pentru valorile din array: [0,"text",9,undefined,"undefined",-5,null,"null"] afisati in consola valoarea si tipul ei. Ex: "9 is a number"
+		console.log("--- problema 10 ---");
+		var arr=[0,"text",9,undefined,"undefined",-5,null,"null"];
+		arr.forEach(function(item,index){
+			console.log(item, " is a ", String(typeof item));
+		});
+		
+		//Problema 11. 
+		//Pentru valorile din array: [0,"text",9,undefined,"undefined",-5,null,"null"] afisati in consola valoarea si tipul ei. Ex: "9 is a number"
+		console.log("--- problema 11 ---");
+		var arr=[0,"text",9,undefined,"undefined",-5,null,"null"];
+		var vowels=["a","e","i","o","u"];
+		arr.forEach(function(item,index){
+			if(vowels.indexOf((typeof item)[0])!== -1) console.log(item, " is an ", typeof item);
+			else console.log(item, " is a ", typeof item);
+		});
+		
+		//Problema 12. 
+		//Afisati in consola in mod crescator valorile din obiectul urmator { first:13, second:6, thrid:0, tenth:34, last:-2}
+		console.log("--- problema 12 ---");
+		var obj={ first:13, second:6, thrid:0, tenth:34, last:-2}
+		console.log(Object.values(obj).sort(function(a, b) {return a - b;}));
+		</script>
+	</body>
+</html>
