@@ -1,0 +1,13 @@
+{
+  "name": "tema1",
+  "repository": {
+  "type": "git",
+  "url": "git@github.com:vioricaneghina/pentastagiu-frontend-2017.git"
+},
+  "author": "Alex Lesanu <alesanu@pentalog.fr>",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.0"
+  }
+}

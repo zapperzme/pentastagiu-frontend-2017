@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <style>
+            .lb{
+                display: inline-block;
+            }
+
+            .check, .uncheck{
+                width: 40px;
+                overflow: hidden;
+                background-color: #d1d1d1;
+                padding: 10px;
+                display: inline-block;
+                position: relative;
+            }
+
+            .check{
+                border-radius: 30px 0 0 30px;
+
+            }
+            .uncheck{
+                border-radius: 0 30px 30px 0;
+
+            }
+
+            .check:before, .uncheck:before{
+                content: "";
+                width: 30px;
+                height: 30px;
+                display: inline-block;
+                background-size: 30px;
+                background-repeat: no-repeat;
+                transition: 0.7s all cubic-bozier(0.175, 0.885, 0.32, 1.275);
+
+            }
+
+            .check:before{
+                background-image: url(assets/left-arrow.png);
+            }
+            .uncheck:before{
+                background-image: url(assets/right-arrow.png);
+            }
+
+            input[type= "checkbox"].cb + .check:before{
+                transform: translateX(70px);
+                opacity: 0;
+            }
+            input[type= "checkbox"].cb + .check + .uncheck:before{
+                transform: translateX(10px);
+                opacity: 1;
+            }
+
+            input[type= "checkbox"].cb:checked + .check:before{
+                transform: translateX(0px);
+                opacity: 1;
+            }
+            input[type= "checkbox"].cb:checked + .check + .uncheck:before{
+                transform: translateX(-70px);
+                opacity: 1;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <label class="lb">
+            <input type="checkbox" class="cb" checked />
+            <span class="check"></span>
+            <span class="uncheck"></span>
+        </label>
+    
+    </body>
+</html>

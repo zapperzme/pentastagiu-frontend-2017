@@ -1,0 +1,422 @@
+html {
+  height: 100%;
+}
+body {
+   width:1000px;
+   min-height: 100%;
+   margin: auto;
+   background-color: #313131;
+   margin: 0 auto;
+}
+#container
+{
+	height: 1170px;	
+	width: 960px;
+	background-color: #ffffff;
+	
+}
+
+#header{
+	width: 960px;
+	height: 90px;
+	border: 0px solid white;
+	}
+#top {
+	margin:0px auto ;
+	width: 50%;
+	height: 6px;
+	background: #a7c353;
+	position: fixed;
+	}
+	
+		
+	#top {
+		margin:0px auto ;
+		height: 6px;
+		width: 960px;
+		}
+		#top { top: 0; }
+		
+		
+
+
+
+#logo{
+	float:left;
+    width:300px;
+	height: 90px;
+}
+
+#nav {
+	float:left;
+    width:640px;
+	height: 90px;
+	}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	height: 100px;
+    background-color: #ffffff;
+	line-height:70px;
+	float: right;
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+    display: block;
+    color: #a7c353;
+    text-align: center;
+	height: 100px;
+    padding: 14px 16px;
+    text-decoration: none;
+	
+}
+.active{
+  background-color:#a7c353;
+  color:#fff;
+
+}
+
+
+li a:hover {
+    background-color: #a7c353;
+	color: #ffffff;
+}
+
+#shout {
+	height: 140px;
+	width: 720px;
+	margin: auto;
+	font-family: Georgia,serif;
+	font-size: 22px;
+	text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    
+	
+}
+#slider{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	height: 427px;
+    width: 920px;
+	
+}
+#sliderimage{
+	height: 427px;
+	width: 920px;
+	margin-left: 100px;
+}
+h2{
+   position: absolute;
+   width: 300px;
+   height: 41px;
+   top: 200px; 
+   left: 550px;
+   
+	
+}
+h2 span { 
+   position: absolute;
+   display: inline-block;
+   color: white; 
+   font: 22px Georgia; 
+   letter-spacing: -1px;  
+   background-color: #a7c353;
+   padding: 10px;
+
+}
+
+h3{
+	position: absolute;
+   width: 270px;
+   height: 70px;
+   top: 250px; 
+   left: 550px;
+	
+}
+h3 span { 
+    position: absolute;
+    background-color: #ffffff;
+    font: 13px Georgia; 
+	margin: auto;
+	text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+#arrowleft {
+  display: inline-block;
+  background-image: url("../img/arrowleft.png");
+  background-repeat: no-repeat;
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  top: 149px;
+  left: 10px;
+}
+
+#arrowright {
+  display: inline-block;
+  background-image: url("../img/arrowright.png");
+  background-repeat: no-repeat;
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  top: 149px;
+  right: 5px;
+}
+hr{
+	position: relative;
+}
+
+.content{
+	padding-top: 25px;
+	padding-left: 20px;
+	width: 280px;
+	float:left; 
+	margin: auto;
+	align-items: center;
+	vertical-align: middle;
+	text-align: left;
+	}
+	
+.content2{
+	padding-top: 25px;
+	padding-left: 40px;
+	width: 280px;
+	float:left; 
+	margin: auto;
+	align-items: center;
+	vertical-align: middle;
+	text-align: left;
+	}	
+
+#contenttext{
+	padding-top: 10px;
+	padding-left: 20px;
+	width: 280px;
+	float:left; 
+	margin: auto;
+	align-items: center;
+	vertical-align: middle;
+	text-align: left;
+	font: 13px Georgia;
+}
+
+#contentlink {
+	font: 13px Georgia;
+	padding-top: 20px;
+}
+
+.contentlink a:link {
+	float: right;
+	padding-top: 10px;
+	color: #a7c353;
+	text-decoration: none;
+}
+
+#services {
+	font: 13px Georgia;
+	vertical-align: middle;
+	text-align: right;
+	color: #999999;
+}
+
+.services img{
+	float: left;
+	padding-right: 10px;
+	
+}
+
+#servtitle {
+	padding-bottom: 6px;
+	font: 14px Georgia;
+	color: #878787;
+}
+
+.clienttitle {
+	font: 16px Georgia;
+	padding-left: 25px;
+
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-style: italic;
+    width: 300px;
+    margin: 0.25em 0;
+    padding: 0.35em 40px;
+    line-height: 1.45;
+     position: relative;
+     display: inline-block;
+    color: #383838;
+
+
+}
+
+blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 130px;
+    position: absolute;
+    left: -20px;
+    top: -40px;
+    color: #7a7a7a;
+
+	
+}
+
+
+.clienttext {
+	padding-top: 10px;
+	height: 107px;
+	float:left; 
+	margin: auto;
+	align-items: center;
+	vertical-align: middle;
+	text-align: left;
+	font: 13px Georgia;
+	
+}
+
+#client1 {
+	
+	height: 170px;
+}
+
+footer {
+	height: 436px;
+	width: 960px;
+	background-color: #313131;
+}
+
+.content3{
+	display: inline-block;
+	padding-top: 20px;
+    font: 14px Georgia;
+	color: #999999;
+	line-height: 20px;
+	width: 225px;
+	float:left; 
+	margin: auto;
+	text-align: left;
+}
+
+.footertitle{
+
+	font: 16px Georgia;
+	color: #ffffff;
+	float: left;
+	padding-bottom: 10px;
+	
+}
+
+.footertitle a:link {
+		text-decoration: none;
+	float: right;
+	padding-top: 10px;
+	color: #a7c353;
+}
+
+a[href^="mailto:"] {
+   color: #a7c353;
+   text-decoration: none;
+}
+
+
+.social{
+    float: left;
+	padding-top: 10px;
+	color: #a7c353;
+	font: 12px Georgia;
+	text-align: center;
+}
+.content3 a:link {
+	text-decoration: none;
+	float: right;
+	padding-top: 10px;
+	color: #a7c353;
+}
+
+.content3 a:visted {
+    color: #ffffff;
+}
+
+input[type=text], select {
+    width: 100%;
+	height: 30px;
+	padding-left: 15px;
+    padding-bottom: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 0px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+	background-color: #383838;
+	font: 13px Georgia;
+}
+
+
+input[type=submit] {
+    width: 80px;
+	height: 35px;
+    background-color: #a7c353;
+    color: black;
+	font: 13px Georgia;
+	text-align: center;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}	
+
+textarea{
+    width: 100%;
+    height: 110px;
+	font: 13px Georgia;
+    border:0px solid #7ac9b7;
+	display: inline-block;
+	background-color: #383838;
+	border-radius: 10px;
+    box-sizing: border-box;
+    margin: 8px 0;
+    resize:none;
+	float: left;
+	padding-left: 15px;
+}
+
+.copyright {
+	width: 960px;
+	height: 50px;
+	padding-top: 20px;
+	font: 13px Georgia;
+	float: left;
+}	
+.copyrightxt {
+	float: left;
+	padding-top: 20px;
+	font: 13px Georgia;
+	color: #999999;
+	text-align: center;
+}
+
+.template {
+	float: right;	
+	padding-top: 20px;
+	font: 13px Georgia;
+	color: #999999;
+	text-align: center;	
+}
