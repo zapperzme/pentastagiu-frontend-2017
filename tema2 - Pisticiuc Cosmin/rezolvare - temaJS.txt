@@ -1,0 +1,170 @@
+1. Aranjati numerele din array in ordine crescatoare: [20, -11, 9, 0, -1, 34, -7]
+
+var arr = [20, -11, 9, 0, -1, 34, -7];
+//console.log(arr);
+
+arr.sort(function (a, b) {
+    return a - b
+});
+
+2. Inlaturati valoarea 2 din array: [1,2,3,4,2,5,7,2,2] 
+
+var arr = [1, 2, 3, 4, 2, 5, 7, 2, 2];
+var arr2 = [];
+for (var i = 0; i < arr.length; i++) {
+    //    console.log(arr[i]);
+    if (arr[i] !== 2) {
+        arr2.push(arr[i]);
+    }
+}
+
+3. Afisati din array-ul ["a", "b", "c", "dd", "a"] doar valorile b si c.
+
+var array1 = ["a", "b", "c", "dd", "a"];
+var array2 = [];
+for (var i = 0; i < array1.length; i++) {
+    //	console.log(array1[i]);  
+    if (array1[i] == 'b') {
+        array2.push(array1[i]);
+    } else if (array1[i] == 'c') {
+        array2.push(array1[i]);
+    }
+
+}
+
+4. Scrieti o functie pentru a afisa in consola data de astazi, in formatul dd-mm-yyyy
+
+function tDate() {
+
+    var format = null;
+    var date = new Date();
+
+    var day = date.getDate();
+    var month = date.getMonth() + 1;
+    var year = date.getFullYear();
+
+    if (month < 10) {
+        return format = day + '-0' + month + '-' + year;
+    } else {
+        return format = day + '-' + month + '-' + year;
+    }
+}
+
+5. Afisati valorile obiectului  { 0: 'a', 1: 'b', 2: 'c' } intr-un array nou
+
+var obj = {
+    0: 'a',
+    1: 'b',
+    2: 'c'
+};
+var value = [];
+for(key in obj){
+    value.push(obj[key]);
+}
+
+
+6. Scrieti o functie care sa primeasca 2 argumente si sa returneze suma acestora doar daca numarul este mai mare ca 20.
+
+function banana(a, b) {
+
+    var sumAB = a + b;
+
+    if (sumAB >= 20) {
+        return sumAB;
+    } else {
+        return 'sory';
+
+    }
+}
+
+7. Afisati index pentru fiecare valoare 2 din array: [1,2,3,4,2,5,7,2,2]
+
+var arr = [1, 2, 3, 4, 2, 5, 7, 2, 2];
+
+var index = [];
+
+for (var i = 0; i < arr.length; i++) {
+    if (arr[i] == 2) {
+        index.push(i);
+    }
+}
+
+ 
+8. Inlaturati valoarea 2 din array: [1,2,3,4,2,5,7,2,2] returnand array original
+
+var arr = [1, 2, 3, 4, 2, 5, 7, 2, 2];
+
+for (var i = arr.length; i >= 0; i--) {
+    if (arr[i] == 2) {
+        arr.splice([i], 1);
+    }
+}
+
+9. Scrieti o functie pentru a face split la un string si a-l trasnforma intr-un array de cuvinte - "This is some text"
+
+var str = "This is some text";
+var splitText = str.split(" ");
+
+display(splitText, exNo, title);
+
+10. Pentru valorile din array: [0,"text",9,undefined,"undefined",-5,null,"null"] afisati in consola valoarea si tipul ei. Ex: "9 is a number"
+
+var str = [0, "text", 9, undefined, "undefined", -5, null, "null"];
+
+for (var i = 0; i < str.length; i++) {
+    console.log(str[i] + ' is a ' + typeof(str[i]));
+}
+
+11. Pentru exercitiul anterior, afisati corect forma acordului "an" / "a" in functie de cuvantul ce urmeaza
+
+var str = [0, "text", 9, undefined, "undefined", -5, null, "null"];
+
+for (var i = 0; i < str.length; i++) {
+    
+    var c = (typeof (str[i])).indexOf();
+
+    if (c != -1) {
+        console.log(str[i] + ' is an ' + typeof (str[i]));
+    } else {
+        console.log(str[i] + ' is a ' + typeof (str[i]));
+    }
+
+}
+
+12. Afisati in consola in mod crescator valorile din obiectul urmator { first:13, second:6, thrid:0, tenth:34, last:-2}
+
+var obj2 = {
+    first: 13,
+    second: 6,
+    thrid: 0,
+    tenth: 34,
+    last: -2
+}
+var value2 = [];
+for(key in obj2){
+    value2.push(obj2[key]);
+}
+
+function bubbleSort(a) {
+    var swapped;
+    do {
+        swapped = false;
+        for (var i = 0; i < a.length - 1; i++) {
+            if (a[i] > a[i + 1]) {
+                var temp = a[i];
+                a[i] = a[i + 1];
+                a[i + 1] = temp;
+                swapped = true;
+            }
+        }
+    } while (swapped);
+    return a;
+    //var temp = null;
+    //    for (var i = 0; i < a.length; i++) {
+    //        if (a[i] > a[i + 1]) {
+    //            temp = a[i];
+    //            a[i] = a[i + 1];
+    //            a[i + 1] = temp;
+    //        }
+    //    }
+}
