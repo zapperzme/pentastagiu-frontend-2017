@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script> 
+  <title>Tema3 </title>
+<body>
+ 
+
+<p> 1.</p> 
+<form>
+  <input id="accept" name="accept" type="checkbox" value="Accept"/>I accept<br>
+  <input id="submitbtn" disabled="disabled" name="Submit" type="submit" value="Submit" />
+</form>
+ 
+<p>2.</p>
+
+<textarea id="mesaj-scurt">
+  De exemplu..
+</textarea>
+<span id="caractere-ramase"></span>
+
+
+<p>3.</p>
+
+ <div id="dropdown">
+
+</div>
+
+<p> 4. </p>
+
+<div class="parinte">
+  <div class="sub first">Buna</div>
+  <div class="not-sub second">Vreau</div>
+  <div class="sub third">Heading</div>
+</div>
+
+
+<p> 5. </p>
+
+ <form id="tinta" name="Al meu!">
+  <input type="text" value="Primul camp"> <br />
+  <input type="text" value="Al doilea camp"> <br />
+ <button type="submit">Salveaza</button>
+</form>
+
+
+<p> 6. </p>
+<form id="target" name="A' meu!">
+  <input type="text" value="Primul camp">
+  <input type="text" value="Al doilea camp">
+ <button type="submit">Salveaza</button>
+</form> 
+<button id="alt-buton" type="button">Alt buton de salvare</button>
+
+
+<script>
+  // ex1
+    $(document).ready(function (e) {
+        $("#accept").click(function () {
+            $("#submitbtn").attr("disabled", !this.checked);
+        });
+    }); 
+</script>
+
+<script>
+  //ex2
+  $("#mesaj-scurt").keypress(function(e) {
+    var tval = $("#mesaj-scurt").val(),
+        tlength = tval.length,
+        set = 15,
+        remain = parseInt(set - tlength);
+    $("#caractere-ramase").text(remain);
+    if (remain <= 0 && e.which !== 0 && e.charCode !== 0) {
+        $("#mesaj-scurt").val((tval).substring(0, tlength - 1))
+    }
+})
+
+</script>
+
+<script>
+  //ex3
+var colors = { 
+    "color1": "Red", 
+    "color2": "Green", 
+    'color3': "Blue" 
+};
+
+$(document).ready(function() {   
+	//select the existing div, and append a new select to it:
+  $('#dropdown').append('<select id="mySelect"></select>');
+  $.each(colors, function(key, value) {   
+     $('#mySelect')
+          .append($('<option>', { value : key })
+          .text(value)); 
+  });
+});
+</script>
+
+<script>
+//ex4
+$(document).ready(function() { 
+$(".sub").each(function() {
+    $(this).replaceWith("<h1>"+$(this).html()+"</h1>")
+    });
+});
+
+</script>
+
+
+<script>
+  //ex5 
+
+$(document).ready(function(){
+$("#tinta").submit(function(event) {
+        input = $('#tinta').attr('name');
+        alert('Submit was called for ' + '' + input);
+        event.preventDefault();
+    });   
+});
+</script>
+
+<script>
+	//ex6
+
+$(document).ready(function() {
+ $( '#target' ).submit(function( event ) {
+    input = $('#target').attr('name');
+    alert('Submit was called for ' + '' + input);
+    event.preventDefault();
+   });
+ $( "#alt-buton" ).click(function() {
+  $( "#target" ).submit();
+    });
+ }); 
+
+</script> 
+</body>
+</html>
