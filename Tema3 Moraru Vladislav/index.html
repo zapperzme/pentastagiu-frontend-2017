@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+</head>
+<style>
+    h2{
+        border-bottom: 5px solid black;
+        background-color: #9C9C9C;
+        color: white;
+    }
+    input{
+        margin-bottom: 4px;
+        margin-right: 0;
+    }
+    body{
+        text-align: center;
+    }
+    div{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .someclass{
+        width: 30%;
+    }
+    xmp{
+        text-align: left;
+    }
+</style>
+
+</head>
+<body>
+<div>
+    <h1>Tema Pentalog</h1>
+
+    <!--Exercitiu 1-->
+    <h2>Exercitiu 1</h2>
+    <xmp>
+        <form>
+            <input id="accept" name="accept" type="checkbox" value="Accept"/>I accept<br>
+            <input id="submitbtn" disabled="disabled" name="Submit" type="submit" value="Submit" />
+        </form>
+    </xmp>
+    <p>Activeaza butonul momentan inactiv "#submitbtn" atunci cand checkbox "#accept" este bifat.
+    </p>
+    <form>
+        <input id="accept" name="accept" type="checkbox" value="Accept"/>I accept<br>
+        <input id="submitbtn" disabled="disabled" name="Submit" type="submit" value="Submit" />
+    </form>
+
+    <!--Exercitiu 2-->
+    <h2>Exercitiu 2</h2>
+    <xmp>
+        <textarea id="mesaj-scurt">De exemplu..</textarea>
+        <span id="caractere-ramase"></span>
+    </xmp>
+    <p>Limiteaza numarul de caractere care pot fi scrise in  textarea cu id "#mesaj-scurt"
+        afisand si numarul de caractere ramase (maxim 15 caractere) in elementul cu id "#caractere-ramase"</p>
+    <textarea id="mesaj-scurt">De exemplu..</textarea>
+    <span id="caractere-ramase"></span>
+
+    <!--Exercitiu 3-->
+    <h2>Exercitiu 3</h2>
+    <p>Adaugati valorile obiectului var colors = { "color1": "Red","color2": "Green",'color3': "Blue"}; ca si
+        optiuni ale elementului de tip select care la randul sau sa se regaseasca intr-un div cu id-ul "dropdown"</p>
+
+    <div id="dropdown">
+        <select id="mySelect"></select>
+    </div>
+
+<!--Exercitiu 4-->
+    <h2>Exercitiu 4</h2>
+    <p>Se da continutul:</p>
+    <xmp>
+        <div class="parinte">
+            <div class="sub first">Buna</div>
+            <div class="not-sub second">Vreau</div>
+            <div class="sub third">Heading</div>
+        </div>
+    </xmp>
+
+    <p>Se cere:
+
+        - inlocuiti toate elementele ce contin clasa css "sub" cu
+        heading H1; atentie sa fie mentinut continutul elementelor</p>
+
+    <div class="parinte">
+        <div class="sub first">Buna</div>
+        <div class="not-sub second">Vreau</div>
+        <div class="sub third">Heading</div>
+    </div>
+
+    <!--Exercitiu 5-->
+    <h2>Exercitiu 5</h2>
+   <p> Se da formularul: </p>
+<xmp>
+    <form id="tinta" name="Al meu!">
+        <input type="text" value="Primul camp">
+        <input type="text" value="Al doilea camp">
+        <button type="submit">Salveaza</button>
+    </form>
+</xmp>
+    <p>
+    Se cere:
+
+    - Pentru formular de mai sus, la submit vrem sa primim o alerta ca formularul
+    cu numele luat din valoarea atributului name a fost trimis. Ex: 'Submit was
+    called for "Al meu"  !'
+    </p>
+    <form id="tinta" name="Al meu!">
+        <input type="text" value="Primul camp">
+        <input type="text" value="Al doilea camp">
+        <button type="submit">Salveaza</button>
+    </form>
+
+
+    <!--Exercitiu 6-->
+    <h2>Exercitiu 6</h2>
+
+<p>Pentru formularul:</p>
+
+<xmp>
+    <form id="tinta" name="A' meu!">
+        <input type="text" value="Primul camp">
+        <input type="text" value="Al doilea camp">
+        <button type="submit">Salveaza</button>
+    </form>
+
+    <button id="alt-buton" type="button">Alt buton de salvare</button>
+</xmp>
+
+    <p>
+    Se cere:
+
+    - Aceeasi cerinta ca si exercitiul anterior, insa se vrea sa putem face
+    submit si cu ajutorul butonului din exteriorul formularului
+    </p>
+
+    <form id="tinta2" name="A' meu!">
+        <input type="text" value="Primul camp">
+        <input type="text" value="Al doilea camp">
+        <button type="submit">Salveaza</button>
+    </form>
+
+    <button id="alt-buton" type="button">Alt buton de salvare</button>
+
+</div>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
