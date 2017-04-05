@@ -1,0 +1,40 @@
+<!--6. Pentru formularul:
+
+<form id="tinta" name="A' meu!">
+  <input type="text" value="Primul camp">
+  <input type="text" value="Al doilea camp">
+  <button type="submit">Salveaza</button>
+</form> 
+
+<button id="alt-buton" type="button">Alt buton de salvare</button>
+
+Se cere:
+- Aceeasi cerinta ca si exercitiul anterior, insa se vrea sa putem face submit si cu ajutorul butonului din exteriorul formularului-->
+
+<html>
+	<head>
+	 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#tinta').on('submit', function(e){
+					e.preventDefault();
+					var text = $("form").attr("name");
+					alert("Submit was called for " + text);
+				});
+				
+				$("#alt-buton").click( function() {
+					$('#tinta').submit();
+				});
+			});
+		</script>
+	</head>
+	<title>Exercitiul 6</title>
+	<body>
+		<form id="tinta" name="A' meu!">
+		  <input type="text" value="Primul camp">
+		  <input type="text" value="Al doilea camp">
+		  <button type="submit">Salveaza</button>
+		</form>
+		<button id="alt-buton" type="button">Alt buton de salvare</button>
+	</body>
+</html>

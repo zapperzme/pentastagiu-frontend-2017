@@ -1,0 +1,32 @@
+<!--2. 
+<textarea id="mesaj-scurt">
+  De exemplu..
+</textarea>
+<span id="caractere-ramase"></span>
+
+Limiteaza numarul de caractere care pot fi scrise in textarea cu id "#mesaj-scurt"
+afisand si numarul de caractere ramase (maxim 15 caractere) in elementul cu id "#caractere-ramase"-->
+
+<html>
+	<head>
+	 <script src="http://code.jquery.com/jquery-1.5.js"></script>
+		<script>
+			$(document).ready( function() {        
+				var maxLen = 15;
+
+				$('#mesaj-scurt').keypress(function(event){
+					var Length = $("#mesaj-scurt").val().length;
+					var AmountLeft = maxLen - Length;
+					$('#caractere-ramase').html(AmountLeft);
+				});
+
+			});
+		</script>
+	</head>
+	<title>Exercitiul 2</title>
+	<body>
+		<textarea id="mesaj-scurt" maxlength="15">
+		</textarea><br />
+		<span id="caractere-ramase">15</span> caractere ramase
+	</body>
+</html>

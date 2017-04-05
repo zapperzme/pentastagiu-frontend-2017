@@ -1,0 +1,32 @@
+<!--4. Se da continutul:
+
+<div class="parinte">
+  <div class="sub first">Buna</div>
+  <div class="not-sub second">Vreau</div>
+  <div class="sub third">Heading</div>
+</div>
+
+Se cere:
+
+- inlocuiti toate elementele ce contin clasa css "sub" cu heading H1; atentie sa fie mentinut continutul elementelor-->
+
+<html>
+	<head>
+	 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(".sub").each(function(i, elem) {
+					$(elem).replaceWith("<h1>" + $(elem).text() + "</h2>");
+			    })
+			});
+		</script>
+	</head>
+	<title>Exercitiul 4</title>
+	<body>
+		<div class="parinte">
+		  <div class="sub first">Buna</div>
+		  <div class="not-sub second">Vreau</div>
+		  <div class="sub third">Heading</div>
+		</div>
+	</body>
+</html>
