@@ -78,9 +78,20 @@ div cu id-ul "dropdown".
 
 */
 
+var colors = { 
+    "color1": "Red", 
+    "color2": "Green", 
+    'color3': "Blue" 
+}; 
 
+$( "<select id='select'>" ).appendTo( $( "#dropdown" ) );
 
-//Verificare jsfiddle: 
+$.each(colors, function(key, value) {   
+     $('#select')
+          .append($('<option>', { value : key })
+          .text(value)); 
+});
+//Verificare jsfiddle: https://jsfiddle.net/AlexCondur/01gong6z/
 
 
 
@@ -114,7 +125,7 @@ function() {
 		$(elem).replaceWith("<h1>" + $(elem).text() + "</h2>");
 	})
 });
-//Verificare jsfiddle: 
+//Verificare jsfiddle: https://jsfiddle.net/AlexCondur/pbaokko1/
 
 
 
