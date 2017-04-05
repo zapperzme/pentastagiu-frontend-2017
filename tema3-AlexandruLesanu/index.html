@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+  <script src='script.js'></script>
+  <link rel="icon" type="image/png" href="http://www.fancyicons.com/free-icons/222/simple/png/256/jquery_256.png">
+  <title>Tema3 - JQuery </title>
+<body>
+
+<h3> 1.Activeaza butonul momentan inactiv "#submitbtn" atunci cand checkbox "#accept" este bifat.</h3>
+<form>
+  <input id="accept" name="accept" type="checkbox" value="Accept"/>I accept<br>
+  <input id="submitbtn" disabled="disabled" name="Submit" type="submit" value="Submit" />
+</form>
+
+<h3> 2.Limiteaza numarul de caractere care pot fi scrise in  textarea cu id "#mesaj-scurt" <br>
+afisand si numarul de caractere ramase (maxim 15 caractere) in elementul cu id "#caractere-ramase"</h3>
+<textarea id="mesaj-scurt" maxlength="15">
+  Click here...
+</textarea>
+<span id="caractere-ramase"></span>
+
+<h3> 3.Adaugati valorile obiectului colors ca si optiuni ale elementului de tip select care  <br>
+  la randul sau sa se regaseasca intr-un div cu id-ul "dropdown".</h3>
+ <div id="dropdown">
+</div>
+
+<h3> 4.Inlocuiti toate elementele ce contin clasa css "sub" cu heading H1; atentie sa fie <br>
+  mentinut continutul elementelor</h3>
+<div class="parinte">
+  <div class="sub first">Buna</div>
+  <div class="not-sub second">Vreau</div>
+  <div class="sub third">Heading</div>
+</div>
+
+<h3> 5.Pentru formular de mai jos, la submit vrem sa primim o alerta ca formularul cu numele <br>
+  luat din valoarea atributului name a fost trimis. Ex: <q>Submit was called for "Al meu"  !</q></h3>
+ <form id="tinta" name="Al meu!">
+  <input type="text" value="Primul camp"> <br />
+  <input type="text" value="Al doilea camp"> <br />
+ <button type="submit">Salveaza</button>
+</form>
+
+<h3> 6.Aceeasi cerinta ca si a exercitiului anterior, insa se vrea sa putem face  submit si cu <br>
+  ajutorul butonului din exteriorul formularului</h3>
+  <form id="tinta2" name="A' meu!">
+   <input type="text" value="Primul camp"> <br />
+   <input type="text" value="Al doilea camp"> <br />
+  <button type="submit">Salveaza</button>
+ </form>
+<button id="alt-buton" type="button">Alt buton de salvare</button>
+
+</body>
+</html>
