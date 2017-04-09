@@ -1,0 +1,133 @@
+1.
+
+<form>
+  <input id="accept" name="accept" type="checkbox" value="Accept"/>I accept<br>
+  <input id="submitbtn" disabled="disabled" name="Submit" type="submit" value="Submit" />
+</form>
+
+Activeaza butonul momentan inactiv "#submitbtn" atunci cand checkbox "#accept" este bifat.
+
+$("#accept").click(function() {
+    var checked_status = this.checked;
+    if (checked_status == true) {
+       $("#submitbtn").removeAttr("disabled");
+    } else {
+       $("#submitbtn").attr("disabled", "disabled");
+    }
+});
+
+
+
+
+2. 
+<textarea id="mesaj-scurt">
+  De exemplu..
+</textarea>
+<span id="caractere-ramase"></span>
+
+Limiteaza numarul de caractere care pot fi scrise in  textarea cu id "#mesaj-scurt"
+afisand si numarul de caractere ramase (maxim 15 caractere) in elementul cu id "#caractere-ramase"
+
+var maxLength = 15;
+$('#mesaj-scurt').keyup(function() {
+  var length = $(this).val().length;
+  var length = maxLength-length;
+  $('#caractere-ramase').text(length);
+});
+
+
+
+
+3. 
+<div id="dropdown">
+
+</div>
+
+Adaugati valorile obiectului 
+var colors = { 
+    "color1": "Red", 
+    "color2": "Green", 
+    'color3': "Blue" 
+}; 
+ca si optiuni ale elementului de tip <select> care la randul sau sa se regaseasca intr-un
+div cu id-ul "dropdown".
+
+<div id="dropdown">
+<select id="colors"> 
+<option value="#EA4A4A">Red</option> 
+<option value="#4bb64f">Green</option>  
+<option value="#3366CC">Blue</option> 
+</select>
+<div id="someDiv">Colour sample</div>
+</div>
+
+$("#colors").change(function() {
+    $("#dropdown").css("background-color", $(this).val());
+}).change();
+
+
+
+
+4. Se da continutul:
+
+<div class="parinte">
+  <div class="sub first">Buna</div>
+  <div class="not-sub second">Vreau</div>
+  <div class="sub third">Heading</div>
+</div>
+
+Se cere:
+
+- inlocuiti toate elementele ce contin clasa css "sub" cu 
+heading H1; atentie sa fie mentinut continutul elementelor
+
+
+
+
+
+5. Se da formularul:
+
+<form id="tinta" name="Al meu!">
+  <input type="text" value="Primul camp">
+  <input type="text" value="Al doilea camp">
+ <button type="submit">Salveaza</button>
+</form>
+
+Se cere:
+
+- Pentru formular de mai sus, la submit vrem sa primim o alerta ca formularul 
+cu numele luat din valoarea atributului name a fost trimis. Ex: 'Submit was
+ called for "Al meu"  !'
+
+$("#tinta").submit(function(){
+				var str=$("#tinta").attr('name');
+				alert( 'Submit was called for "'+str+'"  ' );
+			});
+
+			
+			
+			
+6. Pentru formularul:
+
+<form id="tinta" name="A' meu!">
+  <input type="text" value="Primul camp">
+  <input type="text" value="Al doilea camp">
+ <button type="submit">Salveaza</button>
+</form> 
+</br>
+<button id="alt-buton" type="button">Alt buton de salvare</button>
+
+Se cere:
+
+- Aceeasi cerinta ca si exercitiul anterior, insa se vrea sa putem face 
+submit si cu ajutorul butonului din exteriorul formularului
+
+
+$("#tinta").submit(function(){
+				var str=$("#tinta").attr('name');
+				alert( 'Submit was called for "'+str+'"  ' );
+			});
+  $("#alt-buton").click(function(){
+				$("#tinta").submit();
+				
+			});

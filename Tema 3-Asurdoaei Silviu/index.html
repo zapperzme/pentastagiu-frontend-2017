@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jquarry Homework</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+ <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+
+  <h1>Exercitiul 1</h1>
+  <form>
+    <input id="accept" name="accept" type="checkbox" value="Accept"/>I accept<br>
+    <input id="submitbtn" disabled="disabled" name="Submit" type="submit" value="Submit" />
+  </form>
+
+  <h1>Exercitiul 2</h1>
+  <textarea id="mesaj-scurt" maxlength="20"></textarea>
+  <span id="caractere-ramase"></span>
+
+  <h1>Exercitiul 3</h1>
+  <div id="dropdown">
+
+  </div>
+
+  <h1>Exercitiul 4</h1>
+
+  <div class="parinte">
+    <div class="sub first">Buna</div>
+    <div class="not-sub second">Vreau</div>
+    <div class="sub third">Heading</div>
+  </div>
+
+  <h1>Exercitiul 5</h1>
+
+  <form id="tinta" name="Al meu!">
+    <input type="text" value="Primul camp">
+    <input type="text" value="Al doilea camp">
+    <button type="submit">Salveaza</button>
+  </form>
+
+  <h1>Exercitiul 6</h1>
+
+  <form id="tinta1" name="Al meu!">
+    <input type="text" value="Primul camp">
+    <input type="text" value="Al doilea camp">
+    <button type="submit">Salveaza</button>
+  </form>
+  <button id="alt-buton" type="button">Alt buton de salvare</button>
+
+
+<script>
+      $('#accept').click(function() {
+      if ($(this).is(':checked')) {
+        $('#submitbtn').removeAttr('disabled');
+      } else {
+        $('#submitbtn').attr('disabled', 'disabled');
+      }
+    });
+</script>
+  
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!--3. 
+<div id="dropdown">
+</div>
+
+Adaugati valorile obiectului 
+var colors = { 
+    "color1": "Red", 
+    "color2": "Green", 
+    'color3': "Blue" 
+}; 
+ca si optiuni ale elementului de tip <select> care la randul sau sa se regaseasca intr-un
+div cu id-ul "dropdown".-->
+
+<html>
+	<head>
+	    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script>
+			var colors = { 
+				"color1": "Red", 
+				"color2": "Green", 
+				"color3": "Blue",
+				"color4": "Black"
+			};
+			$(document).ready(function() {
+				$.each(colors, function(key, value) {   
+					$('#myColors')
+						.append($("<option></option>")
+							.attr("value",key)
+							.text(value)); 
+				});
+			});
+		</script>
+	</head>
+	<title>Exercitiul 3</title>
+	<body>
+		<div id="dropdown">	
+			<select id="myColors"></select>
+		</div>
+	</body>
+</html>

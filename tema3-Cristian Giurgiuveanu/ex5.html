@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <title>ex5 </title>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+</head>
+<body>
+
+  <form id="tinta" name="Al meu!">
+    <input type="text" value="Primul camp">
+    <input type="text" value="Al doilea camp">
+   <button type="submit">Salveaza</button>
+  </form>
+
+
+<script>
+
+$('#tinta').submit(function( event ) {
+    alert( "Submit was called for \""+event.target.name+"\"" );
+    event.preventDefault();
+});
+
+</script>
+
+</body>
+</html>

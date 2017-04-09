@@ -1,0 +1,34 @@
+<!--5. Se da formularul:
+<form id="tinta" name="Al meu!">
+  <input type="text" value="Primul camp">
+  <input type="text" value="Al doilea camp">
+ <button type="submit">Salveaza</button>
+</form>
+
+Se cere:
+
+- Pentru formularul de mai sus, la submit vrem sa primim o alerta ca formularul cu numele luat din valoarea atributului name a fost 
+trimis. Ex: 'Submit was called for "Al meu"!'-->
+
+<html>
+	<head>
+	 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#tinta').on('submit', function(e){
+					e.preventDefault();
+					var text = $("form").attr("name");
+					alert("Submit was called for " + text);
+				});
+			});
+		</script>
+	</head>
+	<title>Exercitiul 5</title>
+	<body>
+		<form id="tinta" name="Al meu!">
+		  <input type="text" value="Primul camp">
+		  <input type="text" value="Al doilea camp">
+		  <button type="submit">Salveaza</button>
+		</form>
+	</body>
+</html>

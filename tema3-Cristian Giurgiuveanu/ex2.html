@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <title>ex2 </title>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+</head>
+<body>
+
+  <textarea id="mesaj-scurt" data-limit="15">
+  De exemplu..
+</textarea>
+
+<span id="caractere-ramase"></span>
+
+<script>
+
+$(document).ready(function () {
+
+    $('textarea').on("load propertychange keyup input paste",
+    function () {
+        var limit = $(this).data("limit");
+        var remainingChars = limit - $(this).val().length;
+        if (remainingChars <= 0) {
+            $(this).val($(this).val().substring(0, limit));
+        }
+        $("#caractere-ramase").text(remainingChars<=0?0:remainingChars);
+    });
+
+  $('textarea').trigger('load');
+});
+
+
+</script>
+
+</body>
+</html>
