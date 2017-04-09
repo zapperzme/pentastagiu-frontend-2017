@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <title>ex3 </title>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+</head>
+<body>
+
+  <div id="dropdown">
+
+</div>
+
+<script>
+
+var colors = {
+    "color1": "Red",
+    "color2": "Green",
+    'color3': "Blue"
+};
+
+$('#dropdown').append($('<option>', {
+    value: 'color1',
+    text: 'Red',
+
+}));
+$('#dropdown').append($('<option>', {
+    value: 'color2',
+    text: 'Green',
+
+}));
+$('#dropdown').append($('<option>', {
+    value: 'color3',
+    text: 'Blue',
+
+}));
+</script>
+
+</body>
+</html>

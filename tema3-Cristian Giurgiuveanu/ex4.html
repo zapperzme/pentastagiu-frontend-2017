@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <title>ex4 </title>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+</head>
+<body>
+
+<div class="parinte">
+  <div class="sub first">Buna</div>
+  <div class="not-sub second">Vreau</div>
+  <div class="sub third">Heading</div>
+</div>
+
+<script>
+
+$('.sub').each(function(){
+    var newElem = $('<h1>', {html: $(this).html()});
+    $.each(this.attributes, function() {
+        newElem.attr(this.name, this.value);
+    });
+    $(this).replaceWith(newElem);
+});
+
+</script>
+
+</body>
+</html>
