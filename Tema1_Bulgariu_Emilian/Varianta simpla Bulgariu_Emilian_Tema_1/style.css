@@ -1,0 +1,495 @@
+/*
+Am uitat la inceput sa resetez margin si padding (nu in body). Asa trebuia
+* {
+	margin:0;
+	padding:0;
+}
+
+*/
+
+body {
+	background-color: #313131;
+	margin:0;
+	padding:0;
+	size: 100%;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.header {
+	position: relative;
+	margin: 0 auto;
+	background-color: white;
+	width: 90%;
+	max-width: 960px;
+	height: 98px;
+	border-top: 5px solid #a7c353;
+}
+
+.shout-slider {
+	position: relative;
+	margin: 0 auto;
+	background-color: white;
+	width: 90%;
+	max-width: 960px;
+	height: 561px;
+}
+
+.header .container-logo {
+	margin: 0px 20px;
+	border-bottom: 1px solid #a7c353;
+	height: 97px;
+	overflow: hidden;
+}
+
+
+
+.header .container-logo a{
+	text-decoration: none;
+	color: #666666;
+	margin:0;
+}
+
+.header .container-logo .logo {
+	margin:0;
+	padding:0;
+}
+
+.header .container-logo .logo h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 2.55em;
+	padding: 13px 0px 0px;
+	font-variant: small-caps;
+	margin: 0;
+	font-weight: 100;
+	width: 210px;
+}
+
+.header .container-logo .logo h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1em;
+	padding: 0;
+	margin: 0;
+	font-weight: 100;
+	position: relative;
+	width: 210px;
+	top: -8px;
+}
+
+.header .container-logo .header-menu {
+	float: right;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.header .container-logo .header-menu a {
+	display: inline-block;
+	text-decoration: none;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1em;
+	padding: 50px 8px 30px;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+.header .container-logo .header-menu #gallery {
+	padding-right: 20px;
+}
+
+.header .container-logo .active {
+	background-color: #a7c353;
+    color: white;
+}
+
+.header-menu a:hover:not(.active) {
+    background-color: #93b03d;
+	background: linear-gradient(#a7c353, #93b03d);
+    color: white;
+}
+
+.shout {
+	margin: 0 80px;
+	height: 136px;
+}
+
+.shout blockquote {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-align: center;
+	font-size: 1.5em;
+	font-style: italic;
+	font-weight: 100;
+	color: #666666;
+	margin: 0;
+	padding: 39px 0px;
+}
+
+.slider {
+	margin: 0 20px;
+	height: 424px;
+	border-bottom: 1px solid #e2e2e2; 
+}
+
+.slider .img-slider {
+	margin: 0;
+	height: 350px;
+	background-image: url("image/img1.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.arrows {
+	height: 60px;
+	padding:0 10px;
+	margin: 0;
+	position: relative;
+	top: 50%;
+}
+
+.arrows i {
+  border: solid #a7c353;
+  border-width: 0 4px 4px 0;
+  border-radius: 2px;
+  display: inline-block;
+  padding: 3px;
+}
+
+.arrows .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    
+}
+
+.arrows .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.left-arrow, .right-arrow {
+	border: 2px solid #a7c353;
+    display: inline;
+    border-radius: 50%;    
+    background-color: black;
+	width: 50px;
+	height: 50px;
+}
+
+.left-arrow {
+	padding: 5px 7px 5px 10px;
+	
+	
+}
+.right-arrow {
+	padding: 5px 10px 5px 8px;
+}
+
+.arrows a {
+	display: block;
+}
+
+.a-left {
+	float: left;
+}
+
+.a-right {
+	float: right;
+}
+
+.slider .counter-slider {
+	margin: 0;
+	height: 73px;
+	position: relative;
+}
+
+.slider-title {
+	position: absolute;
+	right: 42px;
+	bottom: 20px;
+	width: 38%; /* 350/920 */
+	min-width: 250px;
+}
+
+.slider-title .main-slider-title {
+	background-color: #a7c353;
+	color: white;
+	padding: 0;
+	margin: 5px 0px;
+}
+
+.slider-title .main-slider-title h3 {
+	padding:5px 5px;
+	margin:0;
+	font-size: 1.5em;
+	font-weight: 100;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.slider-title .text-slider-title {
+	background-color: white;
+	color: #666666;
+	padding: 0;
+	margin: 0px;
+}
+
+.slider-title .text-slider-title p{
+	padding: 15px;
+	margin:0;
+	font-size: 1.05em;
+	font-weight: 100;
+}
+
+.counter-slider .all-counters {
+	margin: 8px auto;
+	width: 11.4%;
+	min-width: 100px;
+	height: 15px;
+}
+
+.counter-slider .all-counters a {
+	font-size: 0.5em;
+	margin: 0;
+	padding: 0;
+}
+
+.all-counters .round-counter {
+	border: 2px solid #a7c353;
+    display: inline;
+    border-radius: 50%;    
+    background-color: #a7c353;
+	padding: 0px 5px;
+	margin: 2px;
+}
+
+.counter-slider .all-counters a .active {
+	background-color: white;
+}
+
+.content {
+	margin: 0 auto;
+	background-color: white;
+	width: 90%;
+	max-width: 960px;
+	padding: 30px 0px;
+	height: auto;
+	min-height: 300px;
+	overflow: auto;    /* pentru a face ca height sa fie dinamic*/
+}
+
+.content .container {
+	margin: 0px 20px;
+	width: 28.4375%;  /* 273/960 */
+	min-width: 275px;
+	height: 500px;
+	padding: 0;
+	float: left;
+	color: #666666;
+	position: relative;
+}
+.container-title h3{
+	text-transform: capitalize;
+	font-size: 1.5em;
+	font-weight: 100;
+}
+
+.content .container .container-content img {
+	width: 270px;
+	height: 140px;
+	border: 1px solid #e2e2e2;
+	padding: 2px;
+}
+
+.content .container .container-content a {
+	text-decoration: none;
+	color: #a7c353;
+	text-transform: capitalize;
+	position: absolute;
+	right: 0;
+}
+
+.content .container .container-content a span{
+	font-size: 0.7em;
+	letter-spacing: -2px;
+}
+
+.content .container .container-content .one-service {
+	margin: 8px 0px;
+	padding: 0;
+}
+
+.content .container .container-content .one-service img {
+	width: 64px;
+	height: 64px;
+	float: left;
+	margin-right: 20px;
+	border: 0;
+}
+
+.content .container .container-content .one-service p {
+	padding: 4px;
+	margin: 0;
+}
+
+.content .container .container-content {
+	position: relative;
+}
+
+.one-testimonial {
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.one-testimonial .bigg {
+	font-size: 9em;
+	margin-right: 20px;
+	padding:0;
+	color: #e2e2e2;
+	position: absolute;
+	top: -20px;
+}
+
+.one-testimonial .ceo {
+	padding: 15px 0px 10px 68px;
+	margin: 0;
+}
+
+.footer {
+	position: relative;
+	margin: 0 auto;
+	
+	width: 90%;
+	max-width: 960px;
+	height: auto;
+	min-height: 380px;
+	padding: 0;
+	overflow: auto;
+	border-bottom: 1px solid #3a3a3a;
+}
+
+.footer .f-container {
+	margin: 0 10px;
+	min-width: 221px;
+	height: 350px;
+	padding: 0;
+	float: left;
+	color: #999999;
+	position: relative;
+}
+
+.footer .first {
+	margin: 0 10px 0 0;
+}
+
+.footer .last {
+	margin: 0 0 0 10px;
+}
+
+.footer .f-container-title h3{
+	color: white;
+	text-transform: capitalize;
+	font-size: 1.2em;
+	font-weight: 100;
+	border-bottom: 1px solid #3a3a3a;
+	padding: 10px 0px 15px;
+	margin: 15px 0 10px;
+}
+
+.footer .multi-p {
+	margin: 15px 0;
+	width: 220px;
+	font-size: 0.9em;
+}
+
+.footer .multi-p p {
+	margin:0;
+	padding: 0;
+	word-wrap: break-word;
+}
+
+.footer a {
+	text-decoration: none;
+	color: #a7c353;
+}
+
+.social-content {
+	border-bottom: 1px solid #3a3a3a;
+	padding: 8px 0px;
+	margin-bottom: 8px;
+}
+
+.social-content i {
+	border-radius: 50%;
+	padding: 8px 10px;
+	color: white;
+	background-color: #383838;
+} 
+
+.blog-entry {
+	height : 130px;
+	position: relative;
+}
+
+.blog-entry a {
+	position: absolute;
+	right: 0;
+	padding: 5px 0;
+}
+
+.f-container form {
+	margin-top: 15px;
+	padding: 0;
+}
+
+p.post-admin {
+	padding-bottom: 15px;
+}
+
+.f-container input[type=text], input[type=email], textarea{
+	width: 218px;
+	border: 0;
+    border-radius: 2px;
+	padding: 5px;
+	margin: 5px 0 5px 5px;
+	background-color: #383838;
+	color: #999999;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	resize: none;
+}
+
+.f-container input[type=submit] {
+	width: 75px;
+	border: 0;
+    border-radius: 2px;
+	padding: 5px;
+	margin: 5px;
+	background-color: #a7c353;
+	color: #313131;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+.copyright {
+	position: relative;
+	margin: 0 auto;
+	width: 90%;
+	max-width: 960px;
+	height: auto;
+	min-height: 50px;
+	padding: 0;
+	overflow: auto;
+	color: #999999;
+	
+}
+
+.copyright #copy-left {
+	position: absolute;
+	left: 0;
+	padding: 10px 0;
+}
+
+.copyright #copy-right{
+	position: absolute;
+	right: 0;
+	padding: 10px 0;
+	
+}
